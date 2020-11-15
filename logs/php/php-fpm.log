@@ -120,3 +120,8 @@
 [15-Nov-2020 09:22:16] NOTICE: exiting, bye-bye!
 [15-Nov-2020 09:22:18] NOTICE: fpm is running, pid 10133
 [15-Nov-2020 09:22:18] NOTICE: ready to handle connections
+[15-Nov-2020 16:01:32] NOTICE: Terminating ...
+[15-Nov-2020 16:01:32] NOTICE: Terminating ...
+[15-Nov-2020 16:01:32] NOTICE: exiting, bye-bye!
+[15-Nov-2020 16:17:46] NOTICE: fpm is running, pid 1385
+[15-Nov-2020 16:17:46] NOTICE: ready to handle connections

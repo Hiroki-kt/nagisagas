@@ -448,7 +448,9 @@ add_filter( 'mwform_error_message_mw-wp-form-333', 'my_error_message', 10, 3 );
 function twpp_enqueue_styles() {
   wp_enqueue_style(
     'aos-style',
-    get_template_directory_uri() . '/assets/css/aos.css'
+    '//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css',
+    '',
+    '2.1.1'
   );
   wp_enqueue_style(
     'base-style',
@@ -478,5 +480,45 @@ function twpp_enqueue_styles() {
     'style-min-style',
     get_template_directory_uri() . '/assets/css/style.min.css'
   );
+  wp_enqueue_style(
+    'slick-theme-style',
+    get_template_directory_uri() . '/assets/plugin/slick/slick-theme.css'
+  );
+  wp_enqueue_style(
+   'slick-style',
+   get_template_directory_uri() . '/assets/plugin/slick/slick.css'
+ );
 }
 add_action( 'wp_enqueue_scripts', 'twpp_enqueue_styles' );
+
+function top_enqueue_script(){
+  //WordPress 本体の jQuery を登録解除
+  wp_deregister_script( 'jquery');
+  //jQuery を CDN から読み込む
+  wp_enqueue_script( 'jquery',
+    '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
+    array(),
+    '3.5.1',
+  );
+  wp_enqueue_script( 'iscroll',
+    '//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js',
+    array(),
+    '5.1.3',
+  );
+ wp_enqueue_script( 'popper',
+   '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
+   array(),
+   '1.14.7',
+ );
+ wp_enqueue_script( 'bootstrap',
+   '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+   array(),
+   '4.3.1',
+ );
+wp_enqueue_script( 'drawer',
+  '//cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js',
+  array(),
+  '3.1.0',
+);
+}
+add_action( 'wp_enqueue_scripts', 'top_enqueue_script' );

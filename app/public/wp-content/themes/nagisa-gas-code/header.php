@@ -28,8 +28,8 @@
 <?php if(is_home()):?>
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/slick.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-<link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/plugin/slick/slick-theme.css">
-<link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/plugin/slick/slick.css">
+<!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/plugin/slick/slick-theme.css"> -->
+<!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/plugin/slick/slick.css"> -->
 <!-- <?php elseif(is_tax('product_cat')):?> -->
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/colorbox.css"> -->
 <!-- <?php endif;?> -->
@@ -39,11 +39,15 @@
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/page.css"> -->
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/sp.css"> -->
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"> -->
+
+<!-- google api?? -->
+<!--
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+-->
 
 <?php if(is_home()):?>
 <title>ナギサガスフィッティングス</title>
@@ -61,16 +65,6 @@
 <title><?php the_title(); ?> | ナギサガスフィッティングス</title>
 <?php endif;?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-  $(".drawer").drawer();
-});
-</script>
 
 <?php wp_head(); ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -81,6 +75,11 @@ $(document).ready(function() {
   gtag('js', new Date());
 
   gtag('config', 'UA-141813289-1');
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".drawer").drawer();
+});
 </script>
 
 </head>
