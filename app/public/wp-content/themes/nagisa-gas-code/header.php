@@ -76,6 +76,7 @@
 
   gtag('config', 'UA-141813289-1');
 </script>
+
 <script type="text/javascript">
 $(document).ready(function() {
   $(".drawer").drawer();
@@ -115,7 +116,7 @@ $(document).ready(function() {
 			</div>
 			<div class="bottom">
 				<div class="hdrInner">
-					<div class="logoBox"> <a href="<?php echo home_url();?>/"><img src="./wp-content/themes/nagisa-gas-code/asset/image/logo_01.png" alt="ナギサガスフィッティングス"></a> </div>
+					<div class="logoBox"> <a href="<?php echo home_url();?>/"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス"></a> </div>
 					<!-- =============================== PC GLOBAL NAVIGATION =============================== -->
 					<!-- <div class="qr_code for_pc"><img src="./wp-content/themes/nagisa-gas-code/asset/image/qr.png" alt="サイトQRコード"></div> -->
 					<nav id="gNavi" class="for_pc">
@@ -147,15 +148,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi01.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi02.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi03.png" alt="" width="273" height="89"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>
@@ -189,15 +190,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi01.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi02.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi03.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>
@@ -229,15 +230,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi01.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi02.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi03.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>
@@ -259,16 +260,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi01.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/subnavi02.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/
-													subnavi03.png" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>

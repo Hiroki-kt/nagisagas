@@ -505,20 +505,39 @@ function top_enqueue_script(){
     array(),
     '5.1.3',
   );
- wp_enqueue_script( 'popper',
-   '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
-   array(),
-   '1.14.7',
- );
- wp_enqueue_script( 'bootstrap',
-   '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
-   array(),
-   '4.3.1',
- );
-wp_enqueue_script( 'drawer',
-  '//cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js',
-  array(),
-  '3.1.0',
-);
+  wp_enqueue_script( 'popper',
+    '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
+    array(),
+    '1.14.7',
+  );
+  wp_enqueue_script( 'bootstrap',
+    '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+    array(),
+    '4.3.1',
+  );
+  wp_enqueue_script( 'drawer',
+    '//cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js',
+    array(),
+    '3.1.0',
+  );
+  wp_enqueue_script( 'aos',
+    '//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js',
+    array(),
+    '2.1.1',
+  );
+  wp_enqueue_script( 'slick',
+    '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+    array(),
+    '1.8.1',
+  );
+  wp_enqueue_script( 'ofi',
+    '//cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js',
+    array(),
+    '3.2.4',
+  );
+  wp_enqueue_script(
+    'common-script',
+    get_theme_file_uri( '/assets/js/common.js' ),
+  );
 }
 add_action( 'wp_enqueue_scripts', 'top_enqueue_script' );

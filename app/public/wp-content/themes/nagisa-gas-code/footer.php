@@ -1,7 +1,7 @@
 <?php wp_reset_query(); ?>
 <footer id="footer">
     <div id="ftrInner">
-        <div class="logoBox"> <a href="<?php echo home_url(); ?>/"><img src="./wp-content/themes/nagisa-gas-code/assets/image/logo_01.png" alt="ナギサガスフィッティングス"></a> </div>
+        <div class="logoBox"> <a href="<?php echo home_url(); ?>/"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス"></a> </div>
         <nav id="ftrNav" class="for_pc">
             <ul class="cf ul_1">
                 <li class="home"><a href="<?php echo home_url(); ?>/">ホーム</a></li>
@@ -67,8 +67,6 @@
 <!--　=============================== drawer end ===============================　-->
 <!-- JavaScript -->
 <?php if(is_home()):?>
-<!-- <script src="./wp-content/themes/nagisa-gas-code/asset/js/slick.min.js"></script> -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	$('.slick-box').slick({
@@ -116,9 +114,6 @@ $(function(){
 </script>
 
 <?php endif;?>
-<!-- <script src="./wp-content/themes/nagisa-gas-code/assets/js/common.js"></script> -->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script> -->
-<!-- <script type="text/javascript" src="./wp-content/themes/nagisa-gas-code/assets/js/ofi.js"></script> -->
 
 <script>
     AOS.init();
