@@ -60,7 +60,7 @@
             <small id="copy">Copyright（C）2018 NAGISA GAS FITTINGS.All Rights Reserved.</small> </div>
     </div>
 </footer>
-<div class="totop"><a href="<?php echo home_url(); ?>/"></a></div>
+<div class="totop"><a href="<?php echo home_url(); ?>/" aria-label="ホーム"></a></div>
 </div>
 <!--　=============================== wrapper end ===============================　-->
 </div>

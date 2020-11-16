@@ -488,6 +488,10 @@ function twpp_enqueue_styles() {
    'slick-style',
    get_template_directory_uri() . '/assets/plugin/slick/slick.css'
  );
+  wp_enqueue_style(
+   'swiper-style',
+   '//unpkg.com/swiper/swiper-bundle.min.css'
+ );
 }
 add_action( 'wp_enqueue_scripts', 'twpp_enqueue_styles' );
 
@@ -534,6 +538,9 @@ function top_enqueue_script(){
     '//cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js',
     array(),
     '3.2.4',
+  );
+  wp_enqueue_script( 'swiper',
+    '//unpkg.com/swiper/swiper-bundle.min.js"',
   );
   wp_enqueue_script(
     'common-script',

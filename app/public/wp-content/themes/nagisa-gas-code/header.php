@@ -116,7 +116,7 @@ $(document).ready(function() {
 			</div>
 			<div class="bottom">
 				<div class="hdrInner">
-					<div class="logoBox"> <a href="<?php echo home_url();?>/"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス"></a> </div>
+					<div class="logoBox"> <a href="<?php echo home_url();?>/"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス" ></a> </div>
 					<!-- =============================== PC GLOBAL NAVIGATION =============================== -->
 					<!-- <div class="qr_code for_pc"><img src="./wp-content/themes/nagisa-gas-code/asset/image/qr.png" alt="サイトQRコード"></div> -->
 					<nav id="gNavi" class="for_pc">
@@ -282,7 +282,7 @@ $(document).ready(function() {
 			</div>
 			<!-- =============================== SP HAMBURGER NAVIGATION =============================== -->
 			<div id="hbgNavi" class="for_sp">
-				<button type="button" class="drawer-toggle drawer-hamburger"><span class="drawer-hamburger-icon"></span></button>
+				<button type="button" class="drawer-toggle drawer-hamburger"><span class="drawer-hamburger-icon"><i class="fas fa-bars"></i></span></button>
 				<nav class="drawer-nav">
 					<div class="drawer-menu">
 						<ul>

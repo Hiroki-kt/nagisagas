@@ -242,7 +242,8 @@ a {
   right: 0;
   padding: 8px 10px 8px 55px;
   border: 1px solid #dbdbdb;
-  background: url(../image/icon_tel.png) 12px center no-repeat #fff;
+  background: url(../../../../uploads/icon_tel.png.webp) 12px center no-repeat
+    #fff;
   line-height: 1;
   font-weight: bold;
 }
@@ -302,7 +303,7 @@ a {
 }
 #gNavi ul .gNavi_list > a {
   padding: 38px 5px 22px;
-  background: url(../image/gnavi_home.png) center top no-repeat;
+  background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat;
   box-sizing: border-box;
   display: block;
   border-bottom: 5px solid transparent;
@@ -311,19 +312,23 @@ a {
   border-color: #f96100;
 }
 #gNavi ul li a#gnavi_about {
-  background: url(../image/gnavi_about.png) center top no-repeat;
+  background: url(../../../../uploads/gnavi_about.png.webp) center top no-repeat;
 }
 #gNavi ul li a#gnavi_product {
-  background: url(../image/gnavi_product.png) center top no-repeat;
+  background: url(../../../../uploads//gnavi_product.png.webp) center top
+    no-repeat;
 }
 #gNavi ul li a#gnavi_costomer {
-  background: url(../image/gnavi_customer.png) center top no-repeat;
+  background: url(../../../../uploads//gnavi_customer.png.webp) center top
+    no-repeat;
 }
 #gNavi ul li a#gnavi_works {
-  background: url(../image/gnavi_works.png) center top no-repeat;
+  background: url(../../../../uploads//gnavi_works.png.webp) center top
+    no-repeat;
 }
 #gNavi ul li a#gnavi_contact {
-  background: url(../image/gnavi_contact.png) center top no-repeat;
+  background: url(../../../../uploads//gnavi_contact.png.webp) center top
+    no-repeat;
 }
 
 #gNavi ul .gNavi_list > a span {

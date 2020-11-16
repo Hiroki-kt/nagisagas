@@ -1,20 +1,38 @@
 <?php get_header(); ?>
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_05.jpg.webp" alt="想像して下さいお湯が出ない冬のお風呂を"></div>
+        <div class="swiper-slide"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_02.jpg.webp" alt="毎日の暮らしを快適、安全に"></div>
+        <div class="swiper-slide"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_03.jpg.webp" alt="毎日の暮らしを快適、安全に"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+<!--
 <div id="mainimage" class="for_pc">
     <ul class="slick-box">
-        <li><img src="./wp-content/themes/nagisa-gas-code/asset/image/mainimage_05.jpg" alt="想像して下さいお湯が出ない冬のお風呂を"></li>
-        <li><img src="./wp-content/themes/nagisa-gas-code/asset/image/mainimage_02.jpg" alt="毎日の暮らしを快適、安全に"></li>
-        <li><img src="./wp-content/themes/nagisa-gas-code/asset/image/mainimage_03.jpg" alt="毎日の暮らしを快適、安全に"></li>
-
+        <li><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_05.jpg.webp" alt="想像して下さいお湯が出ない冬のお風呂を"></li>
+        <li><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_02.jpg.webp" alt="毎日の暮らしを快適、安全に"></li>
+        <li><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_03.jpg.webp" alt="毎日の暮らしを快適、安全に"></li>
     </ul>
 </div>
 <div id="mainimage" class="for_sp">
     <ul class="slick-box">
-        <li><img src="./wp-content/themes/nagisa-gas-code/asset/image/mainimage_sp_05.jpg" alt="想像して下さいお湯が出ない冬のお風呂を"></li>
-        <li><img src="./wp-content/themes/nagisa-gas-code/asset/image/mainimage_sp_02.jpg" alt="毎日の暮らしを快適、安全に"></li>
-        <li><img src="./wp-content/themes/nagisa-gas-code/asset/image/mainimage_sp_03.jpg" alt="毎日の暮らしを快適、安全に"></li>
-
+        <li><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_sp_05.jpg.webp" alt="想像して下さいお湯が出ない冬のお風呂を"></li>
+        <li><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_sp_02.jpg.webp" alt="毎日の暮らしを快適、安全に"></li>
+        <li><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/mainimage_sp_03.jpg.webp" alt="毎日の暮らしを快適、安全に"></li>
     </ul>
 </div>
+-->
 <div id="contents" class="cf">
     <div id="main-cts" class="cf">
         <!-- =============================== SECTION_01 =============================== -->
@@ -41,19 +59,19 @@
                 <ul class="list_01">
                     <li>
                         <a href="<?php echo home_url(); ?>/product/gas/">
-                            <div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/product_01.jpg" alt="給湯器"></div>
+                            <div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/product_01.jpg.webp" alt="給湯器"></div>
                             <div class="textBox">給湯器</div>
                         </a>
                     </li>
                     <li>
                         <a href="<?php echo home_url(); ?>/product/kitchen/">
-                            <div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/product_02.jpg" alt="キッチン・厨房機器"></div>
+                            <div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/product_02.jpg.webp" alt="キッチン・厨房機器"></div>
                             <div class="textBox">キッチン・厨房機器</div>
                         </a>
                     </li>
                     <li>
                         <a href="<?php echo home_url(); ?>/product/bath/">
-                            <div class="imgBox"><img src="./wp-content/themes/nagisa-gas-code/asset/image/product_04.jpg" alt="浴室暖房乾燥機"></div>
+                            <div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/product_04.jpg.webp" alt="浴室暖房乾燥機"></div>
                             <div class="textBox">浴室暖房乾燥機</div>
                         </a>
                     </li>
