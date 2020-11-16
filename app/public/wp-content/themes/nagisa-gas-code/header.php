@@ -18,14 +18,15 @@
 <meta name="description" content="ナギサガスフィッティングスのwebサイトの「<?php echo trim(wp_title());?>」のページです。ナギサガスフィッティングスは、ガス機器、住宅設備機器の販売、お取替え工事をさせていただいております。対応エリアは大阪府、京都府、奈良県、兵庫県（すべて一部地域を除く）。大手ガス会社のお客様対応研修も終えており、工事の品質、お客様対応共に大手ガス会社の品質そのものです。ご相談も最新の知識と確な技術で業界の最前線で活躍する当社にお任せ下さい！">
 <?php endif;?>
 
+<?php $upload_dir = wp_upload_dir();?>
 <meta property="og:title" content="ナギサガスフィッティングス" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://nagisa-gas.jp/" />
-<meta property="og:image" content="./wp-content/themes/nagisa-gas-code/asset/image/logo.jpg" />
+<meta property="og:image" content="<?php echo $upload_dir['baseurl'];?>logo.jpg" />
 <meta property="og:site_name"  content="ナギサガスフィッティングス" />
 <meta property="og:description" content="ナギサガスフィッティングスは、ガス機器、住宅設備機器の販売、お取替え工事をさせていただいております。対応エリアは大阪府、京都府、奈良県、兵庫県（すべて一部地域を除く）。大手ガス会社のお客様対応研修も終えており、工事の品質、お客様対応共に大手ガス会社の品質そのものです。ご相談も最新の知識と確な技術で業界の最前線で活躍する当社にお任せ下さい！" />
 
-<?php if(is_home()):?>
+<!-- <?php if(is_home()):?> -->
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/slick.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/plugin/slick/slick-theme.css"> -->
@@ -38,7 +39,6 @@
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/common.css"> -->
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/page.css"> -->
 <!-- <link rel="stylesheet" href="./wp-content/themes/nagisa-gas-code/asset/css/sp.css"> -->
-
 <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"> -->
 
 <!-- google api?? -->
@@ -116,7 +116,7 @@ $(document).ready(function() {
 			</div>
 			<div class="bottom">
 				<div class="hdrInner">
-					<div class="logoBox"> <a href="<?php echo home_url();?>/"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス" ></a> </div>
+					<div class="logoBox"> <a href="<?php echo home_url();?>/"><img src="<?php echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス" ></a> </div>
 					<!-- =============================== PC GLOBAL NAVIGATION =============================== -->
 					<!-- <div class="qr_code for_pc"><img src="./wp-content/themes/nagisa-gas-code/asset/image/qr.png" alt="サイトQRコード"></div> -->
 					<nav id="gNavi" class="for_pc">
@@ -148,15 +148,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>
@@ -190,15 +190,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>
@@ -230,15 +230,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>
@@ -260,15 +260,15 @@ $(document).ready(function() {
 										<div class="rBox">
 											<ul>
 												<li> <a href="<?php echo home_url();?>/inquiry/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi01.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>無料お見積もり・お問い合わせ</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/form/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi02.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>急なご相談はこちら</p>
 													</a> </li>
 												<li> <a href="<?php echo home_url();?>/preparation/">
-													<div class="imgBox"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
+													<div class="imgBox"><img src="<?php echo $upload_dir['baseurl']; ?>/subnavi03.png.webp" alt="" width="273" height="89" class="over"></div>
 													<p>お問い合わせの前に</p>
 													</a> </li>
 											</ul>

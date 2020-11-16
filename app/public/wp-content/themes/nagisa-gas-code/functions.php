@@ -83,6 +83,25 @@ function create_post_type() {
 }
 //数字を漢数字に変換
 
+// style min を使用
+if ( ! is_admin() ) {
+
+    function min_style( $style_uri, $style_dir_uri ) {
+
+        $style = str_replace( trailingslashit( $style_dir_uri ), '', $style_uri );
+        $style = str_replace( '.css', '.min.css', $style );
+
+        if ( file_exists( trailingslashit( STYLESHEETPATH ) . $style ) ) {
+            $style_uri = trailingslashit( $style_dir_uri ) . $style;
+        }
+
+        return $style_uri;
+
+    }
+    add_filter( 'stylesheet_uri', 'min_style', 10, 2 );
+
+}
+
 // メニュー非表示
 function remove_menu() {
 	   global $current_user;
@@ -462,7 +481,7 @@ function twpp_enqueue_styles() {
   );
   wp_enqueue_style(
     'drawer-style',
-    get_template_directory_uri() . '/assets/css/drawer.css'
+    get_template_directory_uri() . '/assets/plugin/drawer/drawer.css'
   );
   wp_enqueue_style(
     'page-style',
@@ -475,10 +494,6 @@ function twpp_enqueue_styles() {
   wp_enqueue_style(
     'sp-style',
     get_template_directory_uri() . '/assets/css/sp.css'
-  );
-  wp_enqueue_style(
-    'style-min-style',
-    get_template_directory_uri() . '/assets/css/style.min.css'
   );
   wp_enqueue_style(
     'slick-theme-style',

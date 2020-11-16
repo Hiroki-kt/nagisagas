@@ -1,7 +1,8 @@
 <?php wp_reset_query(); ?>
+<?php $upload_dir = wp_upload_dir();?>
 <footer id="footer">
     <div id="ftrInner">
-        <div class="logoBox"> <a href="<?php echo home_url(); ?>/"><img src="<?php $upload_dir = wp_upload_dir(); echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス"></a> </div>
+        <div class="logoBox"> <a href="<?php echo home_url(); ?>/"><img src="<?php echo $upload_dir['baseurl']; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス"></a> </div>
         <nav id="ftrNav" class="for_pc">
             <ul class="cf ul_1">
                 <li class="home"><a href="<?php echo home_url(); ?>/">ホーム</a></li>
