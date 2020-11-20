@@ -12,7 +12,7 @@
 <meta name="description" content="ナギサガスフィッティングスは、ガス機器、住宅設備機器の販売、お取替え工事をさせていただいております。対応エリアは大阪府、京都府、奈良県、兵庫県（すべて一部地域を除く）。大手ガス会社のお客様対応研修も終えており、工事の品質、お客様対応共に大手ガス会社の品質そのものです。ご相談も最新の知識と確な技術で業界の最前線で活躍する当社にお任せ下さい！">
 <?php elseif(is_post_type_archive('news')||is_singular('news')):?>
 <meta name="description" content="ナギサガスフィッティングスのwebサイトの「お知らせ」のページです。ナギサガスフィッティングスは、ガス機器、住宅設備機器の販売、お取替え工事をさせていただいております。対応エリアは大阪府、京都府、奈良県、兵庫県（すべて一部地域を除く）。大手ガス会社のお客様対応研修も終えており、工事の品質、お客様対応共に大手ガス会社の品質そのものです。ご相談も最新の知識と確な技術で業界の最前線で活躍する当社にお任せ下さい">
-<?php elseif(is_tax('product_cat')):?>
+<?php elseif(is_tax('product_cat')):?>npm run prettier -- path/to/file.php --write
 <meta name="description" content="ナギサガスフィッティングスのwebサイトの「<?php echo single_term_title; ?>」のページです。ナギサガスフィッティングスは、ガス機器、住宅設備機器の販売、お取替え工事をさせていただいております。対応エリアは大阪府、京都府、奈良県、兵庫県（すべて一部地域を除く）。大手ガス会社のお客様対応研修も終えており、工事の品質、お客様対応共に大手ガス会社の品質そのものです。ご相談も最新の知識と確な技術で業界の最前線で活躍する当社にお任せ下さい">
 <?php else:?>
 <meta name="description" content="ナギサガスフィッティングスのwebサイトの「<?php echo trim(wp_title());?>」のページです。ナギサガスフィッティングスは、ガス機器、住宅設備機器の販売、お取替え工事をさせていただいております。対応エリアは大阪府、京都府、奈良県、兵庫県（すべて一部地域を除く）。大手ガス会社のお客様対応研修も終えており、工事の品質、お客様対応共に大手ガス会社の品質そのものです。ご相談も最新の知識と確な技術で業界の最前線で活躍する当社にお任せ下さい！">
@@ -100,6 +100,7 @@ $(document).ready(function() {
 <?php else:?>
 <body id="<?php echo get_post($wp_query->post->ID)->post_name; ?>" class="under">
 <?php endif;?>
+
 <div class="drawer drawer--top">
 	<div id="wrapper">
 		<header id="header">
