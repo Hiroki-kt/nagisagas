@@ -886,3 +886,149 @@ Stack trace:
 [16-Nov-2020 13:25:36 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
 [16-Nov-2020 13:25:36 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
 [16-Nov-2020 13:25:36 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:26:46 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:26:46 UTC] PHP Stack trace:
+[22-Nov-2020 01:26:46 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/index.php:0
+[22-Nov-2020 01:26:46 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/index.php:185
+[22-Nov-2020 01:26:46 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:26:46 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:26:46 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:27:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:27:04 UTC] PHP Stack trace:
+[22-Nov-2020 01:27:04 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/options-general.php:0
+[22-Nov-2020 01:27:04 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/options-general.php:10
+[22-Nov-2020 01:27:04 UTC] PHP   3. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin.php:297
+[22-Nov-2020 01:27:04 UTC] PHP   4. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:27:04 UTC] PHP   5. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:27:04 UTC] PHP   6. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:27:20 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:27:20 UTC] PHP Stack trace:
+[22-Nov-2020 01:27:20 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/options-general.php:0
+[22-Nov-2020 01:27:20 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/options-general.php:10
+[22-Nov-2020 01:27:20 UTC] PHP   3. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin.php:297
+[22-Nov-2020 01:27:20 UTC] PHP   4. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:27:20 UTC] PHP   5. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:27:20 UTC] PHP   6. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:27:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:27:51 UTC] PHP Stack trace:
+[22-Nov-2020 01:27:51 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:0
+[22-Nov-2020 01:27:51 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:912
+[22-Nov-2020 01:27:51 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:27:51 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:27:51 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:27:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:27:51 UTC] PHP Stack trace:
+[22-Nov-2020 01:27:51 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/edit.php:0
+[22-Nov-2020 01:27:51 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/edit.php:464
+[22-Nov-2020 01:27:51 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:27:51 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:27:51 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:27:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:27:54 UTC] PHP Stack trace:
+[22-Nov-2020 01:27:54 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:0
+[22-Nov-2020 01:27:54 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:775
+[22-Nov-2020 01:27:54 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:27:54 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:27:54 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:29:27 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:29:27 UTC] PHP Stack trace:
+[22-Nov-2020 01:29:27 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/options-general.php:0
+[22-Nov-2020 01:29:27 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/options-general.php:10
+[22-Nov-2020 01:29:27 UTC] PHP   3. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin.php:297
+[22-Nov-2020 01:29:27 UTC] PHP   4. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:29:27 UTC] PHP   5. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:29:27 UTC] PHP   6. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:31:17 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:31:17 UTC] PHP Stack trace:
+[22-Nov-2020 01:31:17 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/index.php:0
+[22-Nov-2020 01:31:17 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/index.php:185
+[22-Nov-2020 01:31:17 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:31:17 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:31:17 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:31:23 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:31:23 UTC] PHP Stack trace:
+[22-Nov-2020 01:31:23 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:0
+[22-Nov-2020 01:31:23 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:912
+[22-Nov-2020 01:31:23 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:31:23 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:31:23 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:32:24 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:32:24 UTC] PHP Stack trace:
+[22-Nov-2020 01:32:24 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:0
+[22-Nov-2020 01:32:24 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:775
+[22-Nov-2020 01:32:24 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:32:24 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:32:24 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:32:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:32:38 UTC] PHP Stack trace:
+[22-Nov-2020 01:32:38 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:0
+[22-Nov-2020 01:32:38 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:775
+[22-Nov-2020 01:32:38 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:32:38 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:32:38 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:32:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:32:40 UTC] PHP Stack trace:
+[22-Nov-2020 01:32:40 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:0
+[22-Nov-2020 01:32:40 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:775
+[22-Nov-2020 01:32:40 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:32:40 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:32:40 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 01:33:00 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 01:33:00 UTC] PHP Stack trace:
+[22-Nov-2020 01:33:00 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:0
+[22-Nov-2020 01:33:00 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/plugins.php:775
+[22-Nov-2020 01:33:00 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 01:33:00 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 01:33:00 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 15:58:43 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 15:58:43 UTC] PHP Stack trace:
+[22-Nov-2020 15:58:43 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:0
+[22-Nov-2020 15:58:43 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:912
+[22-Nov-2020 15:58:43 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 15:58:43 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 15:58:43 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[22-Nov-2020 15:58:48 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[22-Nov-2020 15:58:48 UTC] PHP Stack trace:
+[22-Nov-2020 15:58:48 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:0
+[22-Nov-2020 15:58:48 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/update-core.php:912
+[22-Nov-2020 15:58:48 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[22-Nov-2020 15:58:48 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[22-Nov-2020 15:58:48 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[25-Nov-2020 12:49:29 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/update.php on line 403
+[25-Nov-2020 12:49:29 UTC] PHP Stack trace:
+[25-Nov-2020 12:49:29 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-cron.php:0
+[25-Nov-2020 12:49:29 UTC] PHP   2. do_action_ref_array() /Users/hiroki/Local Sites/nagisagas/app/public/wp-cron.php:138
+[25-Nov-2020 12:49:29 UTC] PHP   3. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:544
+[25-Nov-2020 12:49:29 UTC] PHP   4. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[25-Nov-2020 12:49:29 UTC] PHP   5. wp_update_plugins() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:287
+[25-Nov-2020 12:49:29 UTC] PHP   6. trigger_error() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/update.php:403
+[26-Nov-2020 03:41:44 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/update.php on line 403
+[26-Nov-2020 03:41:44 UTC] PHP Stack trace:
+[26-Nov-2020 03:41:44 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-cron.php:0
+[26-Nov-2020 03:41:44 UTC] PHP   2. do_action_ref_array() /Users/hiroki/Local Sites/nagisagas/app/public/wp-cron.php:138
+[26-Nov-2020 03:41:44 UTC] PHP   3. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:544
+[26-Nov-2020 03:41:44 UTC] PHP   4. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[26-Nov-2020 03:41:44 UTC] PHP   5. wp_update_plugins() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:287
+[26-Nov-2020 03:41:44 UTC] PHP   6. trigger_error() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/update.php:403
+[26-Nov-2020 03:42:01 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/update.php on line 607
+[26-Nov-2020 03:42:01 UTC] PHP Stack trace:
+[26-Nov-2020 03:42:01 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-cron.php:0
+[26-Nov-2020 03:42:01 UTC] PHP   2. do_action_ref_array() /Users/hiroki/Local Sites/nagisagas/app/public/wp-cron.php:138
+[26-Nov-2020 03:42:01 UTC] PHP   3. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:544
+[26-Nov-2020 03:42:01 UTC] PHP   4. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[26-Nov-2020 03:42:01 UTC] PHP   5. wp_update_themes() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:287
+[26-Nov-2020 03:42:01 UTC] PHP   6. trigger_error() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/update.php:607
+[26-Nov-2020 20:08:58 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[26-Nov-2020 20:08:58 UTC] PHP Stack trace:
+[26-Nov-2020 20:08:58 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/index.php:0
+[26-Nov-2020 20:08:58 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/index.php:185
+[26-Nov-2020 20:08:58 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[26-Nov-2020 20:08:58 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[26-Nov-2020 20:08:58 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311
+[26-Nov-2020 20:09:22 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'limit_category_select1' not found or invalid function name in /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php on line 287
+[26-Nov-2020 20:09:22 UTC] PHP Stack trace:
+[26-Nov-2020 20:09:22 UTC] PHP   1. {main}() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/export.php:0
+[26-Nov-2020 20:09:22 UTC] PHP   2. require_once() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/export.php:324
+[26-Nov-2020 20:09:22 UTC] PHP   3. do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-admin/admin-footer.php:95
+[26-Nov-2020 20:09:22 UTC] PHP   4. WP_Hook->do_action() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/plugin.php:478
+[26-Nov-2020 20:09:22 UTC] PHP   5. WP_Hook->apply_filters() /Users/hiroki/Local Sites/nagisagas/app/public/wp-includes/class-wp-hook.php:311

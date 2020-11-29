@@ -127,13 +127,32 @@ a {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 768px) {
+
+/* Todo "display: none" is worse */
+@media screen and (min-width: 1200px) {
   .for_sp {
     display: none;
   }
+  .for_tablet {
+    display: none;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) and (min-width: 750px) {
+  /* .for_pc { */
+  /* display: none; */
+  /* } */
   .for_pc {
+    display: none;
+  }
+  .for_tablet {
+    display: none;
+  }
+}
+@media screen and (max-width: 749px) {
+  .for_pc {
+    display: none;
+  }
+  .for_tablet {
     display: none;
   }
 }
@@ -214,6 +233,9 @@ a {
   object-fit: cover;
   font-family: 'object-fit: cover;';
 }
+.swiper-wrapper {
+  height: fit-content;
+}
 /*--------------------------------------------
 	HEADER
 --------------------------------------------*/
@@ -275,10 +297,14 @@ a {
 #gNavi ul .gNavi_list {
   padding-top: 62px;
 }
-#header .bottom {
-  padding-top: 36px;
+.header-pc {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
 }
-#header .bottom .hdrInner {
+#header .header-pc .hdrInner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -296,14 +322,16 @@ a {
 #gNavi ul .gNavi_list {
   font-size: 14px;
   font-weight: bold;
-  padding: 28px 0 0;
+  padding: 0 0 0;
   border-bottom: 0 solid #f96100;
-  margin: 0 20px;
+  margin-left: 20px;
   box-sizing: border-box;
+  width: 110px;
+  height: 110px;
 }
 #gNavi ul .gNavi_list > a {
-  padding: 38px 5px 22px;
-  background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat;
+  padding: 30px 5px 28px;
+  /* background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat; */
   box-sizing: border-box;
   display: block;
   border-bottom: 5px solid transparent;
@@ -311,27 +339,46 @@ a {
 #gNavi ul .gNavi_list:hover > a {
   border-color: #f96100;
 }
-#gNavi ul li a#gnavi_about {
-  background: url(../../../../uploads/gnavi_about.png.webp) center top no-repeat;
+.gnavi-icon {
+  padding: 30px 5px 28px;
+  /* background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat; */
+  box-sizing: border-box;
+  display: block;
+  border-bottom: 5px solid transparent;
 }
-#gNavi ul li a#gnavi_product {
-  background: url(../../../../uploads//gnavi_product.png.webp) center top
-    no-repeat;
+.gnavi-tel {
+  padding: 15px 5px 15px;
+  /* background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat; */
+  box-sizing: border-box;
+  display: block;
+  border-bottom: 5px solid transparent;
+  background-color: #39302c;
+  color: #dbdbdb;
 }
-#gNavi ul li a#gnavi_costomer {
-  background: url(../../../../uploads//gnavi_customer.png.webp) center top
-    no-repeat;
+.gnavi-icon:hover {
+  border-color: #f96100;
 }
-#gNavi ul li a#gnavi_works {
-  background: url(../../../../uploads//gnavi_works.png.webp) center top
-    no-repeat;
-}
-#gNavi ul li a#gnavi_contact {
-  background: url(../../../../uploads//gnavi_contact.png.webp) center top
-    no-repeat;
-}
+/* #gNavi ul li div#gnavi_about { */
+/* background: url(../../../../uploads/gnavi_about.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li div#gnavi_product { */
+/* background: url(../../../../uploads//gnavi_product.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li div#gnavi_costomer { */
+/* background: url(../../../../uploads//gnavi_customer.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li a#gnavi_works { */
+/* background: url(../../../../uploads//gnavi_works.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li div#gnavi_contact { */
+/* background: url(../../../../uploads//gnavi_contact.png.webp) center top no-repeat; */
+/* } */
 
 #gNavi ul .gNavi_list > a span {
+  display: block;
+  text-align: center;
+}
+#gNavi ul .gNavi_list > div span {
   display: block;
   text-align: center;
 }
@@ -347,6 +394,7 @@ a {
   color: #fe7b07;
   font-family: 'Sorts Mill Goudy';
   line-height: 1;
+  white-space: nowrap;
 }
 #gNavi .gNavi_sub {
   opacity: 0;
@@ -548,13 +596,51 @@ a {
 .totop.visible {
   transform: scale(1);
 }
+#footer .telBox {
+  bottom: 120px;
+  right: 0;
+  padding: 30px 10px 15px 55px;
+  border: 1px solid #dbdbdb;
+  background: url(../../../../uploads/icon_tel.png.webp) 12px center no-repeat
+    #fff;
+  line-height: 1;
+  font-weight: bold;
+}
+#footer .telBox .head {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+#footer .telBox .number {
+  font-size: 20px;
+  color: #fe7b07;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#footer .telBox .number span {
+  font-size: 14px;
+  margin-right: 3px;
+}
+#footer .telBox .foot {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+#footer .telBox .number .tel {
+  font-size: 1em;
+}
 @media screen and (min-width: 768px) {
+}
+.hero-image {
+  padding-top: 110px;
 }
 
 /*--------------------------------------------
 	sp
 --------------------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   /*base*/
   body {
     min-width: 100% !important;
@@ -579,11 +665,9 @@ a {
   }
 
   /*header*/
-  #header {
-    padding: 10px;
-  }
   #header .logoBox {
-    margin-left: 0;
+    padding-left: 10px;
+    padding-top: 10px;
   }
   #header .telBox {
     position: static;
@@ -603,13 +687,17 @@ a {
     text-align: left;
     padding-left: 1em;
   }
+  .hdrInner {
+    height: 57px;
+  }
   .drawer--top .drawer-nav {
     height: 100%;
   }
   .drawer-hamburger {
-    background: #39302c;
-    padding: 16px 15px 30px 15px;
-    top: -2px;
+    background-color: #39302c;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: 0px;
   }
   .drawer-open .drawer-hamburger-icon {
     background: transparent;
@@ -724,6 +812,9 @@ a {
   .drawer-menu-item {
     padding: 12px 0;
   }
+  .hero-image {
+    padding-top: 60px;
+  }
 
   /*footer*/
   #footer {
@@ -765,5 +856,12 @@ a {
   /*.totop {
 		width: 30px;
 		height: 30px;
-	}*/
+  }*/
+  .header-sp {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
 }
