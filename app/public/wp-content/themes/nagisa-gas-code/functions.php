@@ -554,16 +554,8 @@ function twpp_enqueue_styles()
         get_template_directory_uri() . '/assets/plugin/drawer/drawer.css'
     );
     wp_enqueue_style(
-        'page-style',
-        get_template_directory_uri() . '/assets/css/page.css'
-    );
-    wp_enqueue_style(
         'reset-style',
         get_template_directory_uri() . '/assets/css/reset.css'
-    );
-    wp_enqueue_style(
-        'sp-style',
-        get_template_directory_uri() . '/assets/css/sp.css'
     );
     wp_enqueue_style(
         'slick-theme-style',
@@ -578,12 +570,21 @@ function twpp_enqueue_styles()
         '//unpkg.com/swiper/swiper-bundle.min.css'
     );
     wp_enqueue_style(
-        'menu-style',
-        get_template_directory_uri() . '/assets/css/menu.less'
+        'validationEngine.jquery.css',
+        get_template_directory_uri() .
+            '/assets/plugin/jquery-validation-engine/css/validationEngine.jquery.css'
     );
     wp_enqueue_style(
         'common-style',
         get_template_directory_uri() . '/assets/css/common.css'
+    );
+    wp_enqueue_style(
+        'page-style',
+        get_template_directory_uri() . '/assets/css/page.css'
+    );
+    wp_enqueue_style(
+        'sp-style',
+        get_template_directory_uri() . '/assets/css/sp.css'
     );
 }
 add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
@@ -646,3 +647,19 @@ function top_enqueue_script()
     );
 }
 add_action('wp_enqueue_scripts', 'top_enqueue_script');
+
+//問い合わせフォームのリアルタイムエラーチェック
+function theme_name_scripts()
+{
+    wp_enqueue_script(
+        'jquery.validationEngine-ja.js',
+        get_template_directory_uri() .
+            '/assets/plugin/jquery-validation-engine/js/jquery.validationEngine-ja.js'
+    );
+    wp_enqueue_script(
+        'jquery.validationEngine.js',
+        get_template_directory_uri() .
+            '/assets/plugin/jquery-validation-engine/js/jquery.validationEngine.js'
+    );
+}
+add_action('wp_enqueue_scripts', 'theme_name_scripts');

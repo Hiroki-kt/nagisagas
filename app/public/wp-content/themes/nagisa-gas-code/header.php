@@ -99,6 +99,49 @@
 	objectFitImages('.ofi');
 </script>
 
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery("#contact").validationEngine('attach', {
+			scroll: false,
+			'custom_error_messages': {
+				'#email' : {
+					'required': {
+						'message': "メールアドレスが入力されていません"
+					},
+					'custom[email]': {
+						'message': "メールアドレスを正しく入力してください"
+					}
+				},
+				'#tel' : {
+					'required': {
+						'message': "電話番号が入力されていません"
+					},
+					'custom[phone]': {
+						'message': "電話番号を正しく入力してください"
+					}
+				}
+			}
+		});
+	});
+	jQuery(document).ready(function(){
+		jQuery(".form-name").addClass("validate[required]").attr('data-prompt-position', 'inline');
+		jQuery(".form-mail").addClass("validate[required,custom[email]]").attr('data-prompt-position', 'inline');
+		jQuery(".form-tel").addClass("validate[required,custom[phone]]").attr('data-prompt-position', 'inline');
+		jQuery(".message").addClass("validate[required,minSize[3],maxSize[100]]").attr('data-prompt-position', 'inline');
+	});
+</script>
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'wxx6igd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
 </head>
 
 <?php if (is_home()): ?>
@@ -297,6 +340,10 @@
 								<span class="eng">works</span></a>
 							</li>
 							<li class="gNavi_list">
+								<a href="<?php echo home_url(); ?>/inquiry/" id="gnavi_contact" class="gnavi-tel">
+								<span class="jpn">無料見積り<br>お問い合わせ</span>
+								<span class="eng">Contact</span></a>
+								<!--
 								<div id="gnavi_contact" class="gnavi-tel">
 									<span class="jpn">無料見積り<br>お問い合わせ</span>
 									<span class="eng">contact</span>
@@ -330,6 +377,7 @@
 										</div>
 									</div>
 								</div>
+								-->
 							</li>
 						</ul>
 					</nav>

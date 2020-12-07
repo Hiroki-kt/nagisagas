@@ -161,13 +161,26 @@ a {
   text-align: center;
 }
 .btn_01 a {
+  display: flex;
+  display: -webkit-flex;
   background: #39302c;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
   color: #fff;
   border: 1px solid #39302c;
   padding: 12px 80px;
   text-align: center;
   font-weight: bold;
+  font-size: 22px;
+  width: 70%;
+  margin: 0 auto;
 }
+.btn_01 a i {
+  font-size: 50px;
+}
+
 @media screen and (min-width: 768px) {
   .btn_01 a:hover {
     background: #fff;
@@ -186,7 +199,7 @@ a {
 }
 
 .btn_01 i {
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
 .ttl_01 {
   text-align: center;
@@ -389,6 +402,10 @@ a {
 #gNavi ul li a#gnavi_contact .jpn {
   font-size: 12px;
   line-height: 1.2;
+}
+#gNavi ul li a#gnavi_contact:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 #gNavi ul li .eng {
   color: #fe7b07;
@@ -657,7 +674,7 @@ a {
     font-size: 15px;
   }
   .btn_01 a {
-    max-width: 235px;
+    /* max-width: 235px; */
     padding: 10px 10px;
   }
   .solidBox {
