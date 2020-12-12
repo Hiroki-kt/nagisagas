@@ -125,9 +125,14 @@
 	});
 	jQuery(document).ready(function(){
 		jQuery(".form-name").addClass("validate[required]").attr('data-prompt-position', 'inline');
+		jQuery(".form-kana").addClass("validate[required]").attr('data-prompt-position', 'inline');
 		jQuery(".form-mail").addClass("validate[required,custom[email]]").attr('data-prompt-position', 'inline');
 		jQuery(".form-tel").addClass("validate[required,custom[phone]]").attr('data-prompt-position', 'inline');
-		jQuery(".message").addClass("validate[required,minSize[3],maxSize[100]]").attr('data-prompt-position', 'inline');
+		jQuery(".form-addnum").addClass("validate[required]").attr('data-prompt-position', 'inline');
+		jQuery(".form-add").addClass("validate[required]").attr('data-prompt-position', 'inline');
+		jQuery(".form-abst").addClass("validate[required]").attr('data-prompt-position', 'inline');
+		jQuery(".form-needs").addClass("validate[required]").attr('data-prompt-position', 'inline');
+		jQuery(".form-detail").addClass("validate[required,minSize[3],maxSize[100]]").attr('data-prompt-position', 'inline');
 	});
 </script>
 
