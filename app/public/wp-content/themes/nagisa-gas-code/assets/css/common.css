@@ -131,7 +131,7 @@ a {
 /* Todo "display: none" is worse */
 @media screen and (min-width: 1200px) {
   .for_sp {
-    display: none;
+    display: none !important;
   }
   .for_tablet {
     display: none;
@@ -142,7 +142,7 @@ a {
   /* display: none; */
   /* } */
   .for_pc {
-    display: none;
+    display: none !important;
   }
   .for_tablet {
     display: none;
@@ -150,11 +150,31 @@ a {
 }
 @media screen and (max-width: 749px) {
   .for_pc {
-    display: none;
+    display: none !important;
   }
   .for_tablet {
     display: none;
   }
+}
+
+.contact-button {
+  background-color: #000000;
+  height: 69px;
+  width: 350px;
+  border-radius: 10px;
+  display: table;
+}
+
+.contact-button p {
+  display: table-cell;
+  color: #ffffff;
+  font-size: 21px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contact-button p i {
+  padding-left: 50px;
 }
 
 .btn_01 {
@@ -404,7 +424,6 @@ a {
   line-height: 1.2;
 }
 #gNavi ul li a#gnavi_contact:hover {
-  color: #ffffff;
   text-decoration: none;
 }
 #gNavi ul li .eng {

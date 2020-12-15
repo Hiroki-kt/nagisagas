@@ -1,138 +1,144 @@
 <?php
+
 add_action('init', 'create_post_type');
 function create_post_type()
 {
-    register_post_type('news', [
-        'label' => 'お知らせ',
-        'description' => '',
-        'public' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'rewrite' => true,
-        'query_var' => false,
-        'has_archive' => true,
-        'exclude_from_search' => false,
-        'menu_position' => 20,
-        'supports' => [
-            'title',
-            'editor',
-            'revisions',
-            'thumbnail',
-            'page-attributes',
-        ],
-        'taxonomies' => ['blog_cat'],
-        'labels' => [
-            'name' => 'お知らせ',
-            'all_items' => 'お知らせ一覧',
-        ],
-    ]);
+  register_post_type('news', [
+    'label' => 'お知らせ',
+    'description' => '',
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'rewrite' => true,
+    'query_var' => false,
+    'has_archive' => true,
+    'exclude_from_search' => false,
+    'menu_position' => 20,
+    'supports' => [
+      'title',
+      'editor',
+      'revisions',
+      'thumbnail',
+      'page-attributes',
+    ],
+    'taxonomies' => ['blog_cat'],
+    'labels' => [
+      'name' => 'お知らせ',
+      'all_items' => 'お知らせ一覧',
+    ],
+  ]);
+  register_taxonomy_for_object_type('category', 'news');
+  register_taxonomy_for_object_type('post_tag', 'news');
 
-    register_post_type('product', [
-        'label' => '取扱い製品',
-        'description' => '',
-        'public' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'rewrite' => true,
-        'query_var' => false,
-        'has_archive' => true,
-        'exclude_from_search' => false,
-        'menu_position' => 20,
-        'supports' => [
-            'title',
-            'editor',
-            'revisions',
-            'thumbnail',
-            'page-attributes',
-        ],
-        'taxonomies' => ['product_cat'],
-        'labels' => [
-            'name' => '取扱い製品',
-            'all_items' => '取扱い製品一覧',
-        ],
-    ]);
+  register_post_type('product', [
+    'label' => '取扱い製品',
+    'description' => '',
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'rewrite' => true,
+    'query_var' => false,
+    'has_archive' => true,
+    'exclude_from_search' => false,
+    'menu_position' => 20,
+    'supports' => [
+      'title',
+      'editor',
+      'revisions',
+      'thumbnail',
+      'page-attributes',
+    ],
+    'taxonomies' => ['product_cat'],
+    'labels' => [
+      'name' => '取扱い製品',
+      'all_items' => '取扱い製品一覧',
+    ],
+  ]);
 
-    register_post_type('works', [
-        'label' => '施工実績',
-        'description' => '',
-        'public' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'rewrite' => true,
-        'query_var' => false,
-        'has_archive' => true,
-        'exclude_from_search' => false,
-        'menu_position' => 20,
-        'supports' => [
-            'title',
-            'editor',
-            'revisions',
-            'thumbnail',
-            'page-attributes',
-        ],
-        'labels' => [
-            'name' => '施工実績',
-            'all_items' => '施工実績一覧',
-        ],
-    ]);
-    register_taxonomy('product_cat', 'product', [
-        'hierarchical' => true,
-        'label' => '取扱い製品カテゴリ',
-        'show_ui' => true,
-        'query_var' => true,
-        'rewrite' => ['slug' => 'product'],
-        'singular_label' => '取扱い製品カテゴリ',
-    ]);
+  register_post_type('works', [
+    'label' => '施工実績',
+    'description' => '',
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'rewrite' => true,
+    'query_var' => false,
+    'has_archive' => true,
+    'exclude_from_search' => false,
+    'menu_position' => 20,
+    'supports' => [
+      'title',
+      'editor',
+      'revisions',
+      'thumbnail',
+      'page-attributes',
+    ],
+    'labels' => [
+      'name' => '施工実績',
+      'all_items' => '施工実績一覧',
+    ],
+  ]);
+  register_taxonomy_for_object_type('category', 'works');
+  register_taxonomy_for_object_type('post_tag', 'works');
+
+  register_taxonomy('product_cat', 'product', [
+    'hierarchical' => true,
+    'label' => '取扱い製品カテゴリ',
+    'show_ui' => true,
+    'query_var' => true,
+    'rewrite' => ['slug' => 'product'],
+    'singular_label' => '取扱い製品カテゴリ',
+  ]);
 }
 //数字を漢数字に変換
 
 // style min を使用
 if (!is_admin()) {
-    function min_style($style_uri, $style_dir_uri)
-    {
-        $style = str_replace(trailingslashit($style_dir_uri), '', $style_uri);
-        $style = str_replace('.css', '.min.css', $style);
+  function min_style($style_uri, $style_dir_uri)
+  {
+    $style = str_replace(trailingslashit($style_dir_uri), '', $style_uri);
+    $style = str_replace('.css', '.min.css', $style);
 
-        if (file_exists(trailingslashit(STYLESHEETPATH) . $style)) {
-            $style_uri = trailingslashit($style_dir_uri) . $style;
-        }
-
-        return $style_uri;
+    if (file_exists(trailingslashit(STYLESHEETPATH) . $style)) {
+      $style_uri = trailingslashit($style_dir_uri) . $style;
     }
-    add_filter('stylesheet_uri', 'min_style', 10, 2);
+
+    return $style_uri;
+  }
+  add_filter('stylesheet_uri', 'min_style', 10, 2);
 }
 
 // メニュー非表示
 function remove_menu()
 {
-    global $current_user;
-    get_currentuserinfo();
-    if ($current_user->user_login == 'nagisa-gas-user') {
-        remove_menu_page('plugins.php'); // プラグイン
-        remove_menu_page('tools.php'); // ツール
-        remove_menu_page('options-general.php'); // 設定
-        remove_menu_page('themes.php'); // 外観
-        remove_menu_page('edit.php?post_type=page'); // 固定ページ
-        remove_menu_page('edit.php?post_type=product'); // 取扱製品
-        remove_menu_page('edit.php?post_type=works'); // 施工実績
-    }
-    //remove_menu_page('index.php'); // ダッシュボード
-    remove_menu_page('edit.php'); // 投稿
-    //remove_menu_page('upload.php'); // メディア
-    remove_menu_page('link-manager.php'); // リンク
-    //remove_menu_page('edit.php?post_type=page'); // 固定ページ
-    remove_menu_page('edit-comments.php'); // コメント
-    //remove_menu_page('themes.php'); // 外観
-    //remove_menu_page('plugins.php'); // プラグイン
-    //remove_menu_page('users.php'); // ユーザー
-    //remove_menu_page('tools.php'); // ツール
-    //remove_menu_page('options-general.php'); // 設定
+  global $current_user;
+  get_currentuserinfo();
+  if ($current_user->user_login == 'nagisa-gas-user') {
+    remove_menu_page('plugins.php'); // プラグイン
+    remove_menu_page('tools.php'); // ツール
+    remove_menu_page('options-general.php'); // 設定
+    remove_menu_page('themes.php'); // 外観
+    remove_menu_page('edit.php?post_type=page'); // 固定ページ
+    remove_menu_page('edit.php?post_type=product'); // 取扱製品
+    remove_menu_page('edit.php?post_type=works'); // 施工実績
+  }
+  //remove_menu_page('index.php'); // ダッシュボード
+  //remove_menu_page('edit.php'); // 投稿
+  //remove_menu_page('upload.php'); // メディア
+  remove_menu_page('link-manager.php'); // リンク
+  //remove_menu_page('edit.php?post_type=page'); // 固定ページ
+  remove_menu_page('edit-comments.php'); // コメント
+  //remove_menu_page('themes.php'); // 外観
+  //remove_menu_page('plugins.php'); // プラグイン
+  //remove_menu_page('users.php'); // ユーザー
+  //remove_menu_page('tools.php'); // ツール
+  //remove_menu_page('options-general.php'); // 設定
 }
 add_action('admin_menu', 'remove_menu');
 
@@ -150,10 +156,10 @@ add_filter('comments_rewrite_rules', '__return_empty_array');
 // 全ての「?ver=」の削除
 function vc_remove_wp_ver_css_js($src)
 {
-    if (strpos($src, 'ver=')) {
-        $src = remove_query_arg('ver', $src);
-    }
-    return $src;
+  if (strpos($src, 'ver=')) {
+    $src = remove_query_arg('ver', $src);
+  }
+  return $src;
 }
 add_filter('style_loader_src', 'vc_remove_wp_ver_css_js', 9999);
 add_filter('script_loader_src', 'vc_remove_wp_ver_css_js', 9999);
@@ -193,13 +199,13 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 
 // カスタムメニュー
 register_nav_menus([
-    'navi' => 'グローバルナビゲーション',
+  'navi' => 'グローバルナビゲーション',
 ]);
 
 // カスタムメニューのカスタマイズ
 function my_css_attributes_filter($var)
 {
-    return is_array($var) ? array_intersect($var, ['current-menu-item']) : '';
+  return is_array($var) ? array_intersect($var, ['current-menu-item']) : '';
 }
 add_filter('nav_menu_css_class', 'my_css_attributes_filter', 100, 1);
 add_filter('nav_menu_item_id', 'my_css_attributes_filter', 100, 1);
@@ -208,19 +214,19 @@ add_filter('page_css_class', 'my_css_attributes_filter', 100, 1);
 // 管理バーにログアウトを追加
 function add_new_item_in_admin_bar()
 {
-    global $wp_admin_bar;
-    $wp_admin_bar->add_menu([
-        'id' => 'new_item_in_admin_bar',
-        'title' => __('ログアウト'),
-        'href' => wp_logout_url(),
-    ]);
+  global $wp_admin_bar;
+  $wp_admin_bar->add_menu([
+    'id' => 'new_item_in_admin_bar',
+    'title' => __('ログアウト'),
+    'href' => wp_logout_url(),
+  ]);
 }
 add_action('wp_before_admin_bar_render', 'add_new_item_in_admin_bar');
 
 // ログイン画面ロゴ変更
 function custom_login_logo()
 {
-    ?>
+  ?>
   <style>
   .login #login h1 a {
     width: 140px;
@@ -235,7 +241,7 @@ function custom_login_logo()
 // ダッシュボードのフッターリンクの改編
 function custom_admin_footer()
 {
-    echo '<a href="#"></a>';
+  echo '<a href="#"></a>';
 }
 // add_filter('admin_footer_text', 'custom_admin_footer');
 
@@ -255,64 +261,64 @@ add_image_size('thum2', 75, 75, true);
 // ブログ記事の抜粋表示
 function new_excerpt($length)
 {
-    global $post;
-    $content = strip_tags($post->post_content);
-    if (mb_strlen($content) >= $length) {
-        $content = mb_substr($content, 0, $length);
-        $content = $content . '...';
-    }
-    return $content;
+  global $post;
+  $content = strip_tags($post->post_content);
+  if (mb_strlen($content) >= $length) {
+    $content = mb_substr($content, 0, $length);
+    $content = $content . '...';
+  }
+  return $content;
 }
 add_filter('excerpt_length', 'new_excerpt');
 
 //投稿の1つ目の画像をサムネイルに
 function catch_that_image()
 {
-    global $post, $posts;
-    $first_img = '';
-    ob_start();
-    ob_end_clean();
-    $output = preg_match_all(
-        '/<img.+src=[\'"]([^\'"]+(jpg|jpeg|png)+)[\'"].*>/i',
-        $post->post_content,
-        $matches
-    );
-    $first_img = $matches[1][0];
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all(
+    '/<img.+src=[\'"]([^\'"]+(jpg|jpeg|png)+)[\'"].*>/i',
+    $post->post_content,
+    $matches
+  );
+  $first_img = $matches[1][0];
 
-    if (empty($first_img)) {
-        $first_img = home_url() . '/Image/common/noimage.jpg';
-    }
-    return $first_img;
+  if (empty($first_img)) {
+    $first_img = home_url() . '/Image/common/noimage.jpg';
+  }
+  return $first_img;
 }
 
 // ダッシュボードの概要のカスタム投稿タイプの投稿件数を表示
 function mytheme_dashboard_glance_items($elements)
 {
-    foreach (['property', 'works', 'voice', 'topics'] as $post_type) {
-        $num_posts = wp_count_posts($post_type);
-        if ($num_posts && $num_posts->publish) {
-            $post_type_object = get_post_type_object($post_type);
-            $post_type_label = $post_type_object->label;
-            $text =
-                number_format_i18n($num_posts->publish) .
-                '件の ' .
-                $post_type_label .
-                'の投稿';
-            $elements[] = sprintf(
-                '<a href="edit.php?post_type=%1$s" class="%1$s-count">%2$s</a>',
-                $post_type,
-                $text
-            );
-        }
+  foreach (['property', 'works', 'voice', 'topics'] as $post_type) {
+    $num_posts = wp_count_posts($post_type);
+    if ($num_posts && $num_posts->publish) {
+      $post_type_object = get_post_type_object($post_type);
+      $post_type_label = $post_type_object->label;
+      $text =
+        number_format_i18n($num_posts->publish) .
+        '件の ' .
+        $post_type_label .
+        'の投稿';
+      $elements[] = sprintf(
+        '<a href="edit.php?post_type=%1$s" class="%1$s-count">%2$s</a>',
+        $post_type,
+        $text
+      );
     }
-    return $elements;
+  }
+  return $elements;
 }
 add_filter('dashboard_glance_items', 'mytheme_dashboard_glance_items');
 
 // タイトル未入力時にアラート
 function my_title_required()
 {
-    ?>
+  ?>
 <script type="text/javascript">
   jQuery(document).ready(function($){
     if('property' || 'works' || 'voice' || 'topics' == $('#post_type').val()){
@@ -347,7 +353,7 @@ add_action('admin_print_footer_scripts', 'limit_category_select1');
 // 新着カテゴリを1つのみにする
 function limit_category_select2()
 {
-    ?>
+  ?>
   <script type="text/javascript">
     jQuery(function($) {
       // 投稿画面のカテゴリー選択を制限
@@ -374,292 +380,305 @@ add_action('admin_print_footer_scripts', 'limit_category_select2');
 //管理画面のカスタム投稿一覧にカテゴリ（物件カテゴリ）
 function add_posts_columns1($columns1)
 {
-    $columns1['property_cat'] = '物件カテゴリ'; //カスタム分類（カテゴリ）のスラッグ
-    return $columns1;
+  $columns1['property_cat'] = '物件カテゴリ'; //カスタム分類（カテゴリ）のスラッグ
+  return $columns1;
 }
 function add_posts_columns_list1($column_name1, $post_id)
 {
-    if ('property_cat' == $column_name1) {
-        $terms = $terms = get_the_terms($id, 'property_cat');
-        $cnt = 0;
-        foreach ((array) $terms as $var) {
-            echo $cnt != 0 ? ', ' : '';
-            echo '' . $var->name . '';
-            ++$cnt;
-        }
+  if ('property_cat' == $column_name1) {
+    $terms = $terms = get_the_terms($id, 'property_cat');
+    $cnt = 0;
+    foreach ((array) $terms as $var) {
+      echo $cnt != 0 ? ', ' : '';
+      echo '' . $var->name . '';
+      ++$cnt;
     }
+  }
 }
 add_filter('manage_edit-property_columns', 'add_posts_columns1');
 add_action(
-    'manage_property_posts_custom_column',
-    'add_posts_columns_list1',
-    10,
-    2
+  'manage_property_posts_custom_column',
+  'add_posts_columns_list1',
+  10,
+  2
 );
 
 //管理画面のカスタム投稿一覧にカテゴリ（新着カテゴリ）
 function add_posts_columns2($columns2)
 {
-    $columns2['topics_cat'] = '新着カテゴリ'; //カスタム分類（カテゴリ）のスラッグ
-    return $columns2;
+  $columns2['topics_cat'] = '新着カテゴリ'; //カスタム分類（カテゴリ）のスラッグ
+  return $columns2;
 }
 function add_posts_columns_list2($column_name2, $post_id)
 {
-    if ('topics_cat' == $column_name2) {
-        $terms = $terms = get_the_terms($id, 'topics_cat');
-        $cnt = 0;
-        foreach ((array) $terms as $var) {
-            echo $cnt != 0 ? ', ' : '';
-            echo '' . $var->name . '';
-            ++$cnt;
-        }
+  if ('topics_cat' == $column_name2) {
+    $terms = $terms = get_the_terms($id, 'topics_cat');
+    $cnt = 0;
+    foreach ((array) $terms as $var) {
+      echo $cnt != 0 ? ', ' : '';
+      echo '' . $var->name . '';
+      ++$cnt;
     }
+  }
 }
 add_filter('manage_edit-topics_columns', 'add_posts_columns2');
 add_action(
-    'manage_topics_posts_custom_column',
-    'add_posts_columns_list2',
-    10,
-    2
+  'manage_topics_posts_custom_column',
+  'add_posts_columns_list2',
+  10,
+  2
 );
 
 //固定ページ内にphpファイルをインクルード
 function Include_my_php($params = [])
 {
-    extract(
-        shortcode_atts(
-            [
-                'file' => 'default',
-            ],
-            $params
-        )
-    );
-    ob_start();
-    include get_theme_root() . '/' . get_template() . "/$file.php";
-    return ob_get_clean();
+  extract(
+    shortcode_atts(
+      [
+        'file' => 'default',
+      ],
+      $params
+    )
+  );
+  ob_start();
+  include get_theme_root() . '/' . get_template() . "/$file.php";
+  return ob_get_clean();
 }
 add_shortcode('myphp', 'Include_my_php');
 
 /* ページネーション */
 function pagination($pages = '', $range = 3)
 {
-    $showitems = $range * 2 + 1;
+  $showitems = $range * 2 + 1;
 
-    global $paged;
-    if (empty($paged)) {
-        $paged = 1;
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+
+  if ($pages == '') {
+    global $wp_query;
+    $pages = $wp_query->max_num_pages;
+    if (!$pages) {
+      $pages = 1;
+    }
+  }
+
+  if (1 != $pages) {
+    echo "<div class=\"pager\"><span class=\"pages\">" .
+      $paged .
+      '/' .
+      $pages .
+      '</span>';
+    if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
+      echo "<a href='" . get_pagenum_link(1) . "'>&laquo; 最初</a>";
+    }
+    if ($paged > 1 && $showitems < $pages) {
+      echo "<a href='" . get_pagenum_link($paged - 1) . "'>&lsaquo; 前へ</a>";
     }
 
-    if ($pages == '') {
-        global $wp_query;
-        $pages = $wp_query->max_num_pages;
-        if (!$pages) {
-            $pages = 1;
-        }
+    for ($i = 1; $i <= $pages; $i++) {
+      if (
+        1 != $pages &&
+        (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) ||
+          $pages <= $showitems)
+      ) {
+        echo $paged == $i
+          ? "<span class=\"current\">" . $i . '</span>'
+          : "<a href='" .
+            get_pagenum_link($i) .
+            "' class=\"inactive\">" .
+            $i .
+            '</a>';
+      }
     }
 
-    if (1 != $pages) {
-        echo "<div class=\"pager\"><span class=\"pages\">" .
-            $paged .
-            '/' .
-            $pages .
-            '</span>';
-        if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
-            echo "<a href='" . get_pagenum_link(1) . "'>&laquo; 最初</a>";
-        }
-        if ($paged > 1 && $showitems < $pages) {
-            echo "<a href='" .
-                get_pagenum_link($paged - 1) .
-                "'>&lsaquo; 前へ</a>";
-        }
-
-        for ($i = 1; $i <= $pages; $i++) {
-            if (
-                1 != $pages &&
-                (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) ||
-                    $pages <= $showitems)
-            ) {
-                echo $paged == $i
-                    ? "<span class=\"current\">" . $i . '</span>'
-                    : "<a href='" .
-                        get_pagenum_link($i) .
-                        "' class=\"inactive\">" .
-                        $i .
-                        '</a>';
-            }
-        }
-
-        if ($paged < $pages && $showitems < $pages) {
-            echo "<a href=\"" .
-                get_pagenum_link($paged + 1) .
-                "\">次へ &rsaquo;</a>";
-        }
-        if (
-            $paged < $pages - 1 &&
-            $paged + $range - 1 < $pages &&
-            $showitems < $pages
-        ) {
-            echo "<a href='" . get_pagenum_link($pages) . "'>最後 &raquo;</a>";
-        }
-        echo "</div>\n";
+    if ($paged < $pages && $showitems < $pages) {
+      echo "<a href=\"" . get_pagenum_link($paged + 1) . "\">次へ &rsaquo;</a>";
     }
+    if (
+      $paged < $pages - 1 &&
+      $paged + $range - 1 < $pages &&
+      $showitems < $pages
+    ) {
+      echo "<a href='" . get_pagenum_link($pages) . "'>最後 &raquo;</a>";
+    }
+    echo "</div>\n";
+  }
 }
 //現在のURLを取得
 function print_current_uri()
 {
-    $protocol = is_ssl() ? 'https' : 'http';
-    $uri = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    echo $uri;
+  $protocol = is_ssl() ? 'https' : 'http';
+  $uri = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+  echo $uri;
+}
+
+function catch_first_image()
+{
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all(
+    '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i',
+    $post->post_content,
+    $matches
+  );
+  $first_img = $matches[1][0];
+
+  if (empty($first_img)) {
+    //Defines a default image
+    $first_img = '/images/default.jpg';
+  }
+  return $first_img;
 }
 
 // MW WP FORM
 function my_error_message($error, $key, $rule)
 {
-    if ($key === 'contact_type' && $rule === 'required') {
-        return 'お問い合わせ種別を最低１つ選択してください。';
-    } elseif ($key === 'inquiry_content' && $rule === 'noEmpty') {
-        return 'ご相談内容をご入力ください。';
-    } elseif ($key === 'yourname' && $rule === 'noEmpty') {
-        return 'お名前をご入力ください。';
-    } elseif ($key === 'yourkana' && $rule === 'noEmpty') {
-        return 'フリガナをご入力ください。';
-    } elseif ($key === 'email' && $rule === 'noEmpty') {
-        return 'メールアドレスをご入力ください。';
-    } elseif ($key === 'phonenumber' && $rule === 'noEmpty') {
-        return '電話番号をご入力ください。';
-    } elseif ($key === 'inquiry_process' && $rule === 'required') {
-        return '連絡方法を選択してください。';
-    } elseif ($rule === 'filesize') {
-        return 'ファイルサイズは５MB以下にして下さい。';
-    }
-    return $error;
+  if ($key === 'contact_type' && $rule === 'required') {
+    return 'お問い合わせ種別を最低１つ選択してください。';
+  } elseif ($key === 'inquiry_content' && $rule === 'noEmpty') {
+    return 'ご相談内容をご入力ください。';
+  } elseif ($key === 'yourname' && $rule === 'noEmpty') {
+    return 'お名前をご入力ください。';
+  } elseif ($key === 'yourkana' && $rule === 'noEmpty') {
+    return 'フリガナをご入力ください。';
+  } elseif ($key === 'email' && $rule === 'noEmpty') {
+    return 'メールアドレスをご入力ください。';
+  } elseif ($key === 'phonenumber' && $rule === 'noEmpty') {
+    return '電話番号をご入力ください。';
+  } elseif ($key === 'inquiry_process' && $rule === 'required') {
+    return '連絡方法を選択してください。';
+  } elseif ($rule === 'filesize') {
+    return 'ファイルサイズは５MB以下にして下さい。';
+  }
+  return $error;
 }
 add_filter('mwform_error_message_mw-wp-form-333', 'my_error_message', 10, 3);
 
 // Read css file
 function twpp_enqueue_styles()
 {
-    wp_enqueue_style(
-        'aos-style',
-        '//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css',
-        '',
-        '2.1.1'
-    );
-    wp_enqueue_style(
-        'base-style',
-        get_template_directory_uri() . '/assets/css/base.css'
-    );
-    wp_enqueue_style(
-        'drawer-style',
-        get_template_directory_uri() . '/assets/plugin/drawer/drawer.css'
-    );
-    wp_enqueue_style(
-        'reset-style',
-        get_template_directory_uri() . '/assets/css/reset.css'
-    );
-    wp_enqueue_style(
-        'slick-theme-style',
-        get_template_directory_uri() . '/assets/plugin/slick/slick-theme.css'
-    );
-    wp_enqueue_style(
-        'slick-style',
-        get_template_directory_uri() . '/assets/plugin/slick/slick.css'
-    );
-    wp_enqueue_style(
-        'swiper-style',
-        '//unpkg.com/swiper/swiper-bundle.min.css'
-    );
-    wp_enqueue_style(
-        'validationEngine.jquery.css',
-        get_template_directory_uri() .
-            '/assets/plugin/jquery-validation-engine/css/validationEngine.jquery.css'
-    );
-    wp_enqueue_style(
-        'common-style',
-        get_template_directory_uri() . '/assets/css/common.css'
-    );
-    wp_enqueue_style(
-        'page-style',
-        get_template_directory_uri() . '/assets/css/page.css'
-    );
-    wp_enqueue_style(
-        'sp-style',
-        get_template_directory_uri() . '/assets/css/sp.css'
-    );
+  wp_enqueue_style(
+    'aos-style',
+    '//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css',
+    '',
+    '2.1.1'
+  );
+  wp_enqueue_style(
+    'base-style',
+    get_template_directory_uri() . '/assets/css/base.css'
+  );
+  wp_enqueue_style(
+    'drawer-style',
+    get_template_directory_uri() . '/assets/plugin/drawer/drawer.css'
+  );
+  wp_enqueue_style(
+    'reset-style',
+    get_template_directory_uri() . '/assets/css/reset.css'
+  );
+  wp_enqueue_style(
+    'slick-theme-style',
+    get_template_directory_uri() . '/assets/plugin/slick/slick-theme.css'
+  );
+  wp_enqueue_style(
+    'slick-style',
+    get_template_directory_uri() . '/assets/plugin/slick/slick.css'
+  );
+  wp_enqueue_style('swiper-style', '//unpkg.com/swiper/swiper-bundle.min.css');
+  wp_enqueue_style(
+    'validationEngine.jquery.css',
+    get_template_directory_uri() .
+      '/assets/plugin/jquery-validation-engine/css/validationEngine.jquery.css'
+  );
+  wp_enqueue_style(
+    'common-style',
+    get_template_directory_uri() . '/assets/css/common.css'
+  );
+  wp_enqueue_style(
+    'page-style',
+    get_template_directory_uri() . '/assets/css/page.css'
+  );
+  wp_enqueue_style(
+    'sp-style',
+    get_template_directory_uri() . '/assets/css/sp.css'
+  );
 }
 add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
 
 function top_enqueue_script()
 {
-    //WordPress 本体の jQuery を登録解除
-    wp_deregister_script('jquery');
-    //jQuery を CDN から読み込む
-    wp_enqueue_script(
-        'jquery',
-        '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
-        [],
-        '3.5.1'
-    );
-    wp_enqueue_script(
-        'iscroll',
-        '//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js',
-        [],
-        '5.1.3'
-    );
-    wp_enqueue_script(
-        'popper',
-        '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
-        [],
-        '1.14.7'
-    );
-    wp_enqueue_script(
-        'bootstrap',
-        '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
-        [],
-        '4.3.1'
-    );
-    wp_enqueue_script(
-        'drawer',
-        get_template_directory_uri() . '/assets/plugin/drawer/drawer.js'
-    );
-    wp_enqueue_script(
-        'aos',
-        '//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js',
-        [],
-        '2.1.1'
-    );
-    wp_enqueue_script(
-        'slick',
-        '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
-        [],
-        '1.8.1'
-    );
-    wp_enqueue_script(
-        'ofi',
-        '//cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js',
-        [],
-        '3.2.4'
-    );
-    wp_enqueue_script('swiper', '//unpkg.com/swiper/swiper-bundle.min.js"');
-    wp_enqueue_script(
-        'common-script',
-        get_theme_file_uri('/assets/js/common.js')
-    );
+  //WordPress 本体の jQuery を登録解除
+  wp_deregister_script('jquery');
+  //jQuery を CDN から読み込む
+  wp_enqueue_script(
+    'jquery',
+    '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
+    [],
+    '3.5.1'
+  );
+  wp_enqueue_script(
+    'iscroll',
+    '//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js',
+    [],
+    '5.1.3'
+  );
+  wp_enqueue_script(
+    'popper',
+    '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
+    [],
+    '1.14.7'
+  );
+  wp_enqueue_script(
+    'bootstrap',
+    '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+    [],
+    '4.3.1'
+  );
+  wp_enqueue_script(
+    'drawer',
+    get_template_directory_uri() . '/assets/plugin/drawer/drawer.js'
+  );
+  wp_enqueue_script(
+    'aos',
+    '//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js',
+    [],
+    '2.1.1'
+  );
+  wp_enqueue_script(
+    'slick',
+    '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+    [],
+    '1.8.1'
+  );
+  wp_enqueue_script(
+    'ofi',
+    '//cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js',
+    [],
+    '3.2.4'
+  );
+  wp_enqueue_script('swiper', '//unpkg.com/swiper/swiper-bundle.min.js"');
+  wp_enqueue_script(
+    'common-script',
+    get_theme_file_uri('/assets/js/common.js')
+  );
 }
 add_action('wp_enqueue_scripts', 'top_enqueue_script');
 
 //問い合わせフォームのリアルタイムエラーチェック
 function theme_name_scripts()
 {
-    wp_enqueue_script(
-        'jquery.validationEngine-ja.js',
-        get_template_directory_uri() .
-            '/assets/plugin/jquery-validation-engine/js/jquery.validationEngine-ja.js'
-    );
-    wp_enqueue_script(
-        'jquery.validationEngine.js',
-        get_template_directory_uri() .
-            '/assets/plugin/jquery-validation-engine/js/jquery.validationEngine.js'
-    );
+  wp_enqueue_script(
+    'jquery.validationEngine-ja.js',
+    get_template_directory_uri() .
+      '/assets/plugin/jquery-validation-engine/js/jquery.validationEngine-ja.js'
+  );
+  wp_enqueue_script(
+    'jquery.validationEngine.js',
+    get_template_directory_uri() .
+      '/assets/plugin/jquery-validation-engine/js/jquery.validationEngine.js'
+  );
 }
 add_action('wp_enqueue_scripts', 'theme_name_scripts');
