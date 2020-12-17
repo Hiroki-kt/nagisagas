@@ -1,728 +1,1019 @@
 @charset "utf-8";
 
-@media screen and (max-width : 767px ) {
-	
-/*--------------------------------------------
+@media screen and (max-width: 1199px) {
+  /*--------------------------------------------
 	 TOP
 --------------------------------------------*/
-	
-#top .secInner {
-	padding: 0 20px;
-}
-	#top #sec_01 {
-		padding: 40px 0;
-	}
-	#top #sec_01 .leftBox .lead {
+  .hero-image {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .hero-image-title img {
+    width: 100%;
+  }
+  .hero-image-photo {
+    height: auto;
+  }
+  .hero-image-photo-box {
+    margin-top: 30px;
+  }
+  .top-news {
+    position: static;
+    background-color: #0e376f;
+    margin-top: 30px;
+    width: 90%;
+    height: 280px;
+  }
+  .top-news-box {
+    width: 100%;
+    padding: 10px 20px 40px 0;
+    display: block;
+    color: #ffffff;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
+  .top-news-box a {
+    color: #ffffff;
+    position: relative;
+    right: -200px;
+    bottom: -20px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-size: 13px;
+  }
+  .top-news img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    clip-path: none;
+  }
+  .top-photo-area {
+    display: flex;
+  }
+  .top-date-box {
+    padding: 0px 20px 0 30px;
+  }
+  .top-date-box p {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
+  .top-title {
+    padding: 0;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ffffff;
+  }
+  .top-news-year {
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: 'montserrat-bold';
+    padding: 0;
+    margin: 0;
+  }
+  .top-news-date {
+    font-size: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: 'montserrat-bold';
+    padding: 0;
+    margin: 0;
+  }
+  .top-news-week {
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: 'montserrat-bold';
+    padding: 0;
+    margin: 0;
+  }
+  .top-title {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .advantage {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .advantage-title {
+    width: 100%;
+  }
+  .advantage-title img {
+    width: 90%;
+  }
+  .advantage-caption {
+    margin: 0 20px;
+    max-width: 375px;
+    margin-top: 30px;
+  }
+  .advantage-caption-abst {
+    font-size: 18px;
+    max-width: 350px;
+  }
+  .advantage-caption-detail {
+    font-size: 15px;
+    max-width: 270px;
+    margin-top: 20px;
+  }
+  .advantage-contact-button {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .product {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 80px;
+  }
+  .product-header {
+    display: block;
+    width: 100%;
+  }
+  .product-header img {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .product-header-image {
+    display: flex;
+    position: static;
+    width: 90%;
+    margin: 0;
+  }
+  .product-header-image img {
+    width: fit-content;
+    margin: 0;
+  }
+  .product::before {
+    top: 2250px;
+    width: 100%;
+    z-index: -2;
+    height: 700px;
+  }
+  .product-content {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .product::after {
+    left: 0;
+    z-index: -3;
+    top: 2230px;
+  }
+  .product-content-header {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .product-content-body {
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: 30px;
+    display: table;
+    width: 100%;
+    list-style: none outside;
+  }
+  .product-content-box {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  .product-contact-button {
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+  .product-item-title {
+    font-size: 16px;
+  }
+  .product-item-detail li {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .news {
+    max-width: 400px;
+  }
+  .news-article-box img {
+    width: 240px;
+    height: 101px;
+    object-fit: cover;
+    clip-path: none;
+  }
+  .news-header {
+    display: block;
+    max-width: 100%;
+  }
+  .news-header-image {
+    position: static;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .news-header-title {
+    width: 95%;
+  }
+  .news-list {
+    display: block;
+  }
+  .news-list li {
+    display: block;
+    width: 100%;
+  }
+  .news-check-button {
+    margin: 0 auto;
+  }
+  .works {
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 150px;
+    display: block;
+    max-width: 400px;
+  }
+  .works-header {
+    margin-bottom: 50px;
+  }
+  .works-title {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .works-title-photo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .works-caption {
+    max-width: 380px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  .works-caption-abst {
+    font-size: 18px;
+    padding-bottom: 30px;
+    border-bottom: solid #000000;
+    max-width: 330px;
+  }
+  .works-caption-detail {
+    font-size: 15px;
+    max-width: 280px;
+    margin-top: 30px;
+  }
+  .works-content {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .news-article-box {
+    display: block;
+  }
+  .news-photo-area {
+    display: flex;
+  }
+  .news-manth {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'montserrat-bold';
+  }
+  .news-date {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 'montserrat-semibold';
+  }
+  .news-week {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'montserrat-bold';
+  }
+  .news-article-title {
+    color: #000000;
+    font-size: 18px;
+    padding-top: 30px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
+  .works-check-button {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  #top .secInner {
+    padding: 0 20px;
+  }
+  #top #sec_01 {
+    padding: 40px 0;
+  }
+  #top #sec_01 .leftBox .lead {
     font-size: 20px;
     margin: 0 0 15px;
-}
-	#top #sec_01 .leftBox {
-		width: 100%;
-	}
-	#top #sec_02 {
-		padding: 40px 0;
-	}
-	#top #sec_02 .list_01 li {
-		width: 100%;
-	}
-	#top #sec_02 .list_01 li:nth-of-type(4),
-	#top #sec_02 .list_01 li:nth-of-type(5),
-	#top #sec_02 .list_01 li:nth-of-type(6),
-	#top #sec_02 .list_01 li:nth-of-type(7) {
-		width: 50%;
-	}
-	#top #sec_02 .list_01 li a {
-		display: block;
-	}
-	#top #sec_03 {
-		padding: 40px 0;
-	}
-	#top #sec_03 .list_01 {
-		padding: 4% 4%;
-	}
-	#top #sec_03 .list_01 li a {
-		flex-wrap: wrap;
-		padding: 10px 10px;
-	}
-	#top #sec_03 .list_01 li .date {
-		width: 100%;
-		    margin-bottom: 5px;
-	}
-	#top #sec_03 .list_01 li .title {
-		width: 100%;
-	}
-/*--------------------------------------------
+  }
+  #top #sec_01 .leftBox {
+    width: 100%;
+  }
+  #top #sec_02 {
+    padding: 40px 0;
+  }
+  #top #sec_02 .list_01 li {
+    width: 100%;
+  }
+  #top #sec_02 .list_01 li:nth-of-type(4),
+  #top #sec_02 .list_01 li:nth-of-type(5),
+  #top #sec_02 .list_01 li:nth-of-type(6),
+  #top #sec_02 .list_01 li:nth-of-type(7) {
+    width: 50%;
+  }
+  #top #sec_02 .list_01 li a {
+    display: block;
+  }
+  #top #sec_03 {
+    padding: 40px 0;
+  }
+  #top #sec_03 .list_01 {
+    padding: 4% 4%;
+  }
+  #top #sec_03 .list_01 li a {
+    flex-wrap: wrap;
+    padding: 10px 10px;
+  }
+  #top #sec_03 .list_01 li .date {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #top #sec_03 .list_01 li .title {
+    width: 100%;
+  }
+
+  /*--------------------------------------------
 	 下層共通
 --------------------------------------------*/
-	.under .drawer-hamburger {
-		box-sizing: content-box;
-	}
-	.under section {
-		padding: 40px 0;
-	}
-	.under .secInner {
-		padding: 0 20px;
-	}
-	.under .mv_ttl {
-		padding-left: 0;
-	}
-	.under #mainimage .box {
-		width: 100%;
-		
-	}
-	.under #mainimage .rBox {
-		display: none;
-	}
-	.under #mainimage .mv_ttl h2 {
-		display: block;
-		text-align: center;
-		font-size: 25px;
-	}
-	.under #mainimage .mv_ttl span {
-		text-align: center;
-		font-size: 13px;
-		margin-top: 0;
-	}
-	.under #mainimage .mv_ttl h2:after {
-		width: 50px;
-		margin: 0 auto;
-		position: static;
-	}
-	.under #mainimage .lBox {
-		padding: 20px 0;
-	}
-	.table-primary th,
-	.table-primary td {
-		width: 100%;
-		display: block;
-	}
-	.table-primary td {
-		font-size: 14px;
-	}
-    form input[type=text] {
-	width: 100%;
-}
-/*--------------------------------------------
-	
-	 会社案内			company
-	
---------------------------------------------*/
-	#company .table_wrap {
-		padding: 0;
-	}
-	#company .map iframe {
-		height: auto;
-	}
-/*--------------------------------------------
-	
-	 ナギサガスフィッティングスの安心施工 about
-	
---------------------------------------------*/	
-	#about .advantage {
-		margin-top: 70px;
-	}
-	#about .advantage:before {
-		font-size: 35px;
-		top: -40px;
-	}
-	#about .advantage .ttl {
-		margin: 0 0 10px 0;
-		font-size: 18px;
-	}
-	#about .box {
-		width: 100%;
-	}
-	
-	#about .boxWrap {
-		padding: 20px;
-	}
-	
-	#about .boxWrap .rBox {
-		margin-top : 10px;
-	}
-/*--------------------------------------------
-	
-	 取扱い製品 　　　product
-	
---------------------------------------------*/	
-	#product .product_wrap li{
-		width: 100%;
-		margin-top: 20px;
-		display: flex;
-		flex-wrap: wrap;
-		padding: 20px 10px;
-	}
-	#product .product_wrap li:first-child {
-		margin-top: 0;
-	}
-	#product .product_wrap li:nth-child(n+4) {
-		margin-top: 20px;
-	}
-	#product .product_wrap li .imgBox {
-		width: 80%;
-		margin: 0 auto 10px;
-		min-height: auto;
-	}
-	
-	#product .product_wrap li .category_gas {
-		left: 0;
-		right: inherit;
-		padding: 3px 6px;
-		font-size: 13px;
-	}
-	
-	#product .product_wrap .product_ttl {
-		font-size: 18px;
-	}
-	#product .product_wrap .ttl_box {
-	display: block;
-}
-	#product .product_wrap .product_logo {
-		margin-top: 5px;
-	}
-	#product .product_wrap .inner {
-		display: block;
-	}
-	#product .product_wrap .infoBox {
-		width: 100%;
-	}
-	#product .product_wrap .badges {
-		justify-content: center;
-		margin-bottom: 10px;
-	}
-	#product .product_wrap .badges span {
-		min-width: 40px;
-		height: 40px;
-		line-height: 1.2;
-	}
-	#product .product_wrap .priceBox {
-		padding: 10px;
-	}
-	#product .product_wrap .priceBox .price_before span {
-		font-size: 20px;
-	}
-	#product .product_wrap .priceBox .price_after span {
-		font-size: 25px;
-	}
-	#product .product_wrap .price_kouji {
-		font-size: 15px;
-		padding: 5px 0;
-	}
-	#product .product_wrap li .btn_product {
-		width: 100%;
-	}
-	#product .product_wrap li .btn_product a {
-		width: 100%;
-	}
-/*--------------------------------------------
-	
-	 スタッフ紹介   	staff
-	
---------------------------------------------*/	
-	#staff .staff_wrap .lead {
-		padding: 0;
-		margin-top: 30px;
-	}
-	#staff .staff_wrap ul {
-		margin-top: 30px;
-	}
-	#staff .staff_wrap ul li {
-		width: 48%;
-		padding: 15px;
-	}
-	#staff .staff_wrap ul li:nth-child(n+3) {
-		margin-top: 20px;
-	}
-/*--------------------------------------------
-	
-	 エコウィルからの乗り換えはこちら	ecowill
-	
---------------------------------------------*/	
-	#ecowill .lead {
-		text-align: left;
-	}
-	#ecowill .table_wrap {
-		padding: 0;
-	}
-	#ecowill .table_wrap_in {
-		position: relative;
-		overflow: hidden;
-	}
-	#ecowill .table_fixed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 95px;
-	}
-	#ecowill .table_fixed tr:nth-child(1)  th{
-		height: 52px;
-	}
-	#ecowill .table_fixed tr:nth-child(2)  th{
-		height: 73px;
-	}
-	#ecowill .table_fixed tr:nth-child(3)  th{
-		height: 55px;
-	}
-	#ecowill .table_fixed tr:nth-child(4)  th{
-		height: 73px;
-	}
-	#ecowill .table_fixed tr:nth-child(5)  th{
-		height: 55px;
-	}
-	#ecowill .scroll_wrap {
-		position: absolute;
-		top: 0;
-		left: 94px;
-		width: 96%;
-		overflow-x: auto;
+  .under .drawer-hamburger {
+    box-sizing: content-box;
+  }
+  .under section {
+    padding: 40px 0;
+  }
+  .under .secInner {
+    padding: 0 20px;
+  }
+  .under .mv_ttl {
+    padding-left: 0;
+  }
+  .under #mainimage .box {
+    width: 100%;
+  }
+  .under #mainimage .rBox {
+    display: none;
+  }
+  .under #mainimage .mv_ttl h2 {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+  }
+  .under #mainimage .mv_ttl span {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 0;
+  }
+  .under #mainimage .mv_ttl h2:after {
+    width: 50px;
+    margin: 0 auto;
+    position: static;
+  }
+  .under #mainimage .lBox {
+    padding: 20px 0;
+  }
+  .table-primary th,
+  .table-primary td {
+    width: 100%;
+    display: block;
+  }
+  .table-primary td {
+    font-size: 14px;
+  }
+  form input[type='text'] {
+    width: 100%;
+  }
+  /*--------------------------------------------
 
-	}
-	#ecowill .scroll_wrap .table-primary {
-		min-width: 1370px;
-		width: 100%;
-		position: relative;
-	}
-	#ecowill .table-primary th,
-	#ecowill .table-primary td {
-		display: table-cell;
-		width: inherit;
-	}
-	#ecowill .table-primary td {
-		padding: 15px;
-	}
-	#ecowill .table-primary .total {
-		font-size: 16px;
-	}#ecowill .attention {
-		padding: 70px 20px 20px 20px;
-		background-position: top 10px center;
-    	background-size: 50px;
-	}
-	#ecowill .table-primary .borderR {
-		border-right: solid 1px #ffb06b;
-	}
-	/*#ecowill .table-primary .sticky {
+	 会社案内			company
+
+--------------------------------------------*/
+  #company .table_wrap {
+    padding: 0;
+  }
+  #company .map iframe {
+    height: auto;
+  }
+  /*--------------------------------------------
+
+	 ナギサガスフィッティングスの安心施工 about
+
+--------------------------------------------*/
+  #about .advantage {
+    margin-top: 70px;
+  }
+  #about .advantage:before {
+    font-size: 35px;
+    top: -40px;
+  }
+  #about .advantage .ttl {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+  }
+  #about .box {
+    width: 100%;
+  }
+
+  #about .boxWrap {
+    padding: 20px;
+  }
+
+  #about .boxWrap .rBox {
+    margin-top: 10px;
+  }
+  /*--------------------------------------------
+
+	 取扱い製品 product
+
+--------------------------------------------*/
+  #product .product_wrap li {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+  }
+  #product .product_wrap li:first-child {
+    margin-top: 0;
+  }
+  #product .product_wrap li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+  #product .product_wrap li .imgBox {
+    width: 80%;
+    margin: 0 auto 10px;
+    min-height: auto;
+  }
+
+  #product .product_wrap li .category_gas {
+    left: 0;
+    right: inherit;
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+
+  #product .product_wrap .product_ttl {
+    font-size: 18px;
+  }
+  #product .product_wrap .ttl_box {
+    display: block;
+  }
+  #product .product_wrap .product_logo {
+    margin-top: 5px;
+  }
+  #product .product_wrap .inner {
+    display: block;
+  }
+  #product .product_wrap .infoBox {
+    width: 100%;
+  }
+  #product .product_wrap .badges {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #product .product_wrap .badges span {
+    min-width: 40px;
+    height: 40px;
+    line-height: 1.2;
+  }
+  #product .product_wrap .priceBox {
+    padding: 10px;
+  }
+  #product .product_wrap .priceBox .price_before span {
+    font-size: 20px;
+  }
+  #product .product_wrap .priceBox .price_after span {
+    font-size: 25px;
+  }
+  #product .product_wrap .price_kouji {
+    font-size: 15px;
+    padding: 5px 0;
+  }
+  #product .product_wrap li .btn_product {
+    width: 100%;
+  }
+  #product .product_wrap li .btn_product a {
+    width: 100%;
+  }
+  /*--------------------------------------------
+
+	 スタッフ紹介   	staff
+
+--------------------------------------------*/
+  #staff .staff_wrap .lead {
+    padding: 0;
+    margin-top: 30px;
+  }
+  #staff .staff_wrap ul {
+    margin-top: 30px;
+  }
+  #staff .staff_wrap ul li {
+    width: 48%;
+    padding: 15px;
+  }
+  #staff .staff_wrap ul li:nth-child(n + 3) {
+    margin-top: 20px;
+  }
+  /*--------------------------------------------
+
+	 エコウィルからの乗り換えはこちら	ecowill
+
+--------------------------------------------*/
+  #ecowill .lead {
+    text-align: left;
+  }
+  #ecowill .table_wrap {
+    padding: 0;
+  }
+  #ecowill .table_wrap_in {
+    position: relative;
+    overflow: hidden;
+  }
+  #ecowill .table_fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+  }
+  #ecowill .table_fixed tr:nth-child(1) th {
+    height: 52px;
+  }
+  #ecowill .table_fixed tr:nth-child(2) th {
+    height: 73px;
+  }
+  #ecowill .table_fixed tr:nth-child(3) th {
+    height: 55px;
+  }
+  #ecowill .table_fixed tr:nth-child(4) th {
+    height: 73px;
+  }
+  #ecowill .table_fixed tr:nth-child(5) th {
+    height: 55px;
+  }
+  #ecowill .scroll_wrap {
+    position: absolute;
+    top: 0;
+    left: 94px;
+    width: 96%;
+    overflow-x: auto;
+  }
+  #ecowill .scroll_wrap .table-primary {
+    min-width: 1370px;
+    width: 100%;
+    position: relative;
+  }
+  #ecowill .table-primary th,
+  #ecowill .table-primary td {
+    display: table-cell;
+    width: inherit;
+  }
+  #ecowill .table-primary td {
+    padding: 15px;
+  }
+  #ecowill .table-primary .total {
+    font-size: 16px;
+  }
+  #ecowill .attention {
+    padding: 70px 20px 20px 20px;
+    background-position: top 10px center;
+    background-size: 50px;
+  }
+  #ecowill .table-primary .borderR {
+    border-right: solid 1px #ffb06b;
+  }
+  /*#ecowill .table-primary .sticky {
 		-webkit-position: sticky;
 		position: sticky;
 		top: 0;
 		left: 0;
 	}*/
-	#ecowill .recommend {
-		padding: 0;
-	}
-	#ecowill .box_recommend .imgBox {
-		width: 100%;
-	}
-	#ecowill .box_recommend .txtBox {
-		width: 100%;
-		padding-left: 0;
-		margin-top: 10px;
-	}
+  #ecowill .recommend {
+    padding: 0;
+  }
+  #ecowill .box_recommend .imgBox {
+    width: 100%;
+  }
+  #ecowill .box_recommend .txtBox {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
 
+  /*--------------------------------------------
 
-/*--------------------------------------------
-	
 	 ご注文の流れ				flow
-	
+
 --------------------------------------------*/
-	#flow .box_flow {
-		display: block;
-	}
-	#flow .box_flow:nth-of-type(2) {
-		margin-top: 0;
-	}
-	#flow .box_flow .ttl {
-		display: block;
-		text-align: center;
-		font-size: 18px;
-		border-bottom-width: 2px;
-	}
-	#flow .box_flow .lBox {
-		width: 100%;
-		padding: 10px;
-		font-size: 23px;
-	}
-	#flow .box_flow .rBox {
-		width: 100%;
-		padding: 20px;
-	}
-	#flow .box_flow .inBox {
-		display: block;
-		border-bottom: none;
-	}
-	#flow .box_flow .inBox .inBox_l {
-		width: 100%;
-		border-right: none;
-		margin: 10px 0;
-		padding: 0;
-		border-bottom: solid 1px #fe7b07;
-		padding-bottom: 20px;
-	}
-	#flow .box_flow .inBox .inBox_r {
-		width: 100%;
-		padding: 0;
-		border-bottom: solid 1px #fe7b07;
-		padding-bottom: 20px;
-		margin: 10px 0;
-	}
-	#flow .box_flow .inBox .inBox_l .freedial {
-		margin-bottom: 5px;
-	}
-	#flow .urgent {
-		padding: 0;	
-	}
-	#flow .box_flow:not(:last-child):after,
-	#flow .box_flow:not(:last-child):before {
-		margin-left: -16px;
-		width: 20px;
-    	height: 20px;
-	}
-/*--------------------------------------------
-	
+  #flow .box_flow {
+    display: block;
+  }
+  #flow .box_flow:nth-of-type(2) {
+    margin-top: 0;
+  }
+  #flow .box_flow .ttl {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    border-bottom-width: 2px;
+  }
+  #flow .box_flow .lBox {
+    width: 100%;
+    padding: 10px;
+    font-size: 23px;
+  }
+  #flow .box_flow .rBox {
+    width: 100%;
+    padding: 20px;
+  }
+  #flow .box_flow .inBox {
+    display: block;
+    border-bottom: none;
+  }
+  #flow .box_flow .inBox .inBox_l {
+    width: 100%;
+    border-right: none;
+    margin: 10px 0;
+    padding: 0;
+    border-bottom: solid 1px #fe7b07;
+    padding-bottom: 20px;
+  }
+  #flow .box_flow .inBox .inBox_r {
+    width: 100%;
+    padding: 0;
+    border-bottom: solid 1px #fe7b07;
+    padding-bottom: 20px;
+    margin: 10px 0;
+  }
+  #flow .box_flow .inBox .inBox_l .freedial {
+    margin-bottom: 5px;
+  }
+  #flow .urgent {
+    padding: 0;
+  }
+  #flow .box_flow:not(:last-child):after,
+  #flow .box_flow:not(:last-child):before {
+    margin-left: -16px;
+    width: 20px;
+    height: 20px;
+  }
+  /*--------------------------------------------
+
 	 対応エリア				area
-	
---------------------------------------------*/	
-	#area .area_detail {
-		padding: 0;
-	}
-	#area .box_area p {
-		padding: 20px;
-	}
-	#area .box_area h4 {
-		display: block;
-		text-align: center;
-		font-size: 18px;
-	}
-/*--------------------------------------------
-	
+
+--------------------------------------------*/
+  #area .area_detail {
+    padding: 0;
+  }
+  #area .box_area p {
+    padding: 20px;
+  }
+  #area .box_area h4 {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  /*--------------------------------------------
+
 	 よくあるご質問				faq
-	
---------------------------------------------*/
-	#faq .faq_list{
-		padding: 0;
-		margin-top: 20px;
-	}
-	#faq .faq_list li {
-		padding: 20px;
-	}
-	#faq .faq_list .q {
-		font-size: 16px;
-		padding-left: 1em;
-    	text-indent: -1em;
-	}
-/*--------------------------------------------
 
-	保証について				warranty		 
-	
 --------------------------------------------*/
-	#warranty .box_warranty {
-		padding: 20px;
-	}
-	#warranty .warranty_list li {
-		width: 100%;
-		margin-top: 15px;
-		padding-right: 70px;
-		background-size: 40px;
-	}
-	#warranty .warranty_list li:first-child {
-		margin-top: 0;
-	}
-	#warranty .warranty_list li:nth-child(n+4) {
-		margin-top: 15px;
-	}
-	
-/*--------------------------------------------
+  #faq .faq_list {
+    padding: 0;
+    margin-top: 20px;
+  }
+  #faq .faq_list li {
+    padding: 20px;
+  }
+  #faq .faq_list .q {
+    font-size: 16px;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  /*--------------------------------------------
 
-	施工実績				works		 
-	
+	保証について				warranty
+
 --------------------------------------------*/
-	
-	#works .works_wrap li {
-		width: 100%;
-		margin-top: 20px;
-		padding-top: 20px;
-	}
-	#works .works_wrap li:first-child {
-		margin-top: 0;
-	}
-	#works .works_wrap li:nth-child(n+4) {
-		margin-top: 20px;
-	}
-	#works .works_wrap li a {
-		display: flex;
-		padding: 20px 10px;
-	}
-	#works .works_wrap li .imgBox {
-		width: 45%;
-            padding-top: 45%;
-	}
-	#works .works_wrap li .txtBox {
-		width: 55%;
-		padding-left: 10px;
-        margin-top: 0;
-	}
-	#works .works_wrap li .category {
-		width: 100%;
-	}
-	#works .works_wrap li .category.gas .gas_sub {
-		display: inline-block;
-		text-align: left;
-		margin-left: 20px;
-	}
-	/*実績詳細*/
-	.works_detail .ttl {
-		font-size: 16px;
-	}
-	.works_detail .box_works {
-		padding: 0;
-	}
-	.works_detail .lBox,
-	.works_detail .rBox {
-		width: 80%;
-        margin: 0 auto;
-        position: relative;
-	}
-    .works_detail .lBox:after,
-	.works_detail .rBox:after {
-		content: '';
-        border: 0px;
-        border-top: solid 3px #fe7b07;
-        border-right: solid 3px #fe7b07;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-            -ms-transform: rotate(135deg) translateX(15px);
-        -webkit-transform: rotate(135deg) translateX(15px);
-        transform: rotate(135deg) translateX(15px);
-        left: 50%;
-        bottom: -20px;
-	}
-    .works_detail .rBox:after {
-            bottom: inherit;
-        top: -45px;
-    }
-	.works_detail .rBox {
-		margin-top: 60px;
-	}
-	.works_detail .box_works:before,
-	.works_detail .box_works:after {
-		display: none;
-	}
-	.works_detail .box_works:before {
-		top: 48%;
-	}
-	.works_detail .table_wrap {
-		padding: 0;
-		 margin-top: 30px;
-	}
-	.works_detail .voice {
+  #warranty .box_warranty {
+    padding: 20px;
+  }
+  #warranty .warranty_list li {
+    width: 100%;
+    margin-top: 15px;
+    padding-right: 70px;
+    background-size: 40px;
+  }
+  #warranty .warranty_list li:first-child {
+    margin-top: 0;
+  }
+  #warranty .warranty_list li:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+
+  /*--------------------------------------------
+
+	施工実績				works
+
+--------------------------------------------*/
+
+  #works .works_wrap li {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  #works .works_wrap li:first-child {
+    margin-top: 0;
+  }
+  #works .works_wrap li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+  #works .works_wrap li a {
+    display: flex;
+    padding: 20px 10px;
+  }
+  #works .works_wrap li .imgBox {
+    width: 45%;
+    padding-top: 45%;
+  }
+  #works .works_wrap li .txtBox {
+    width: 55%;
+    padding-left: 10px;
+    margin-top: 0;
+  }
+  #works .works_wrap li .category {
+    width: 100%;
+  }
+  #works .works_wrap li .category.gas .gas_sub {
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+  }
+  /*実績詳細*/
+  .works_detail .ttl {
+    font-size: 16px;
+  }
+  .works_detail .box_works {
+    padding: 0;
+  }
+  .works_detail .lBox,
+  .works_detail .rBox {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .works_detail .lBox:after,
+  .works_detail .rBox:after {
+    content: '';
+    border: 0px;
+    border-top: solid 3px #fe7b07;
+    border-right: solid 3px #fe7b07;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    -ms-transform: rotate(135deg) translateX(15px);
+    -webkit-transform: rotate(135deg) translateX(15px);
+    transform: rotate(135deg) translateX(15px);
+    left: 50%;
+    bottom: -20px;
+  }
+  .works_detail .rBox:after {
+    bottom: inherit;
+    top: -45px;
+  }
+  .works_detail .rBox {
+    margin-top: 60px;
+  }
+  .works_detail .box_works:before,
+  .works_detail .box_works:after {
+    display: none;
+  }
+  .works_detail .box_works:before {
+    top: 48%;
+  }
+  .works_detail .table_wrap {
+    padding: 0;
     margin-top: 30px;
-}
-	.works_detail .voice_inner {
-		display: block;
-		padding: 20px;
-	}
-	.works_detail .voice_inner .imgBox {
-		width: 100%;
-        padding-top: 140%;
-	}
-	.works_detail .voice_inner .imgBox img {
-		max-width: 100%;
-	}
-	.works_detail .voice_inner .voice_txt {
-		width: 100%;
-		margin-top: 20px;
-        margin-left: 0;
-	}
-	.works_detail .voice_inner .voice_txt .q {
-		margin-bottom: 5px;
-		font-size: 15px;
-	}
-
-	.works_detail .box_works .imgBox img {
-	
-}
-/*--------------------------------------------
-
-	新着情報				news		 
-	
---------------------------------------------*/
-	#news .news_wrap {
-		margin-bottom: 30px;
-	}
-	#news .news_wrap li {
-		width: 100%;
-		margin-top: 20px;
-	}
-	#news .news_wrap li:first-child {
-		margin-top: 0;
-	}
-	#news .news_wrap li:nth-child(n+4) {
-		margin-top: 20px;
-	}
-	/*新着詳細*/
-	#news .single_wrap {
-		padding: 40px 10px 10px;
-		
-	}
-	#news .single_wrap .ttl {
-		font-size: 20px;
-		width: inherit;
-		margin-right: -10px;
-		position: static;
-        margin-left: 0;
-        margin-bottom: 0;
-	}
-	#news .single_wrap .date {
-		padding: 5px 10px;
-	}
-	#news .single_wrap .imgBox {
-		margin-top: 20px;
-        width: 100%;
-	}
-	#news .single_wrap .txtBox {
-		margin-top: 20px;
-        padding: 0;
-	}
-/*--------------------------------------------
-
-	無料見積もり相談・お問い合わせ		inquiry/form/preparation 
-	
---------------------------------------------*/
-	#inquiry #sec_02 .lead {
-		margin: 20px 0;
-	}
-	#inquiry #sec_02 .lead p {
-		font-size: 16px;
-	}
-	#inquiry .box_inquiry ul {
-		display: block;
-	}
-	#inquiry .box_inquiry ul li {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	#inquiry .box_inquiry ul li:last-child {
-		margin-bottom: 0;
-	}
-	#inquiry .box_inquiry ul li a {
-		padding: 15px 0;
-	}
-	
-	#inquiry .box_inquiry ul li img {
-		max-width: 70px;
-	}
-	#inquiry #sec_03 .box_tel h4 {
-		font-size: 18px;
-	}
-	#inquiry .freedial {
-		font-size: 20px;
-	}
-    #inquiry .type .wrap {
-        width: 100%;
-    }
-	#form #sec_01 .lead p {
-		font-size: 16px;
-	}
-    #inquiry #sec_03 .box_tel {
-        padding: 15px;
-    }
-	.box_inquiry .ttl {
-		font-size: 16px;
-	}
-	.box_inquiry .rBox {
-		width: 100%;
-		
-	}
-	.box_inquiry .lBox {
-		width: 100%;
-		display: none;
-	}
-	.form_inquiry {
-		padding: 0; 
-	}
-	section.preparation .lead {
-		font-size: 16px;
-		margin-bottom: 30px;
-		text-align: left;
-	}
-	section.preparation .ttl {
-		font-size: 16px;
-		margin-bottom: 10px;
-	}
-	section.preparation .prep_list > li:not(:last-child) {
-		margin-bottom: 20px;
-	}
-	section.preparation .number_list ul {
-		margin-top: 0;
-	}
-	section.preparation .number_list ul:first-child {
-		border-bottom: none;
-	}
-	section.preparation .number_list li {
-		width: 100%;
-		border-bottom: solid 1px #fe7b07;
-    	padding-bottom: 20px;
-		margin-top: 20px;
-	}
-	section.preparation .number_list li:first-child {
-		border-right: none;
-		margin-top: 0;
-	}
-	section.preparation .number_list li span {
-		font-size: 15px;
-	}
-	section.preparation .number_list .other span {
-		margin-bottom: 10px;
-	}
-	section.preparation .number_list .other p {
-		width: 100%;
-		padding: 10px;
-	}
-	
-	/*お問い合わせの前に*/
-	#preparation .btn_01 {
+  }
+  .works_detail .voice {
     margin-top: 30px;
-}
+  }
+  .works_detail .voice_inner {
+    display: block;
+    padding: 20px;
+  }
+  .works_detail .voice_inner .imgBox {
+    width: 100%;
+    padding-top: 140%;
+  }
+  .works_detail .voice_inner .imgBox img {
+    max-width: 100%;
+  }
+  .works_detail .voice_inner .voice_txt {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .works_detail .voice_inner .voice_txt .q {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
 
-/*--------------------------------------------
+  .works_detail .box_works .imgBox img {
+  }
+  /*--------------------------------------------
 
-	プライバシーポリシー				privacy		 
-	
+	新着情報				news
+
 --------------------------------------------*/
-	#privacy .privacy_wrap {
-		padding: 0;
-	}
-	#privacy .privacy_wrap p {
-		line-height: 1.6;
-	}
-	#privacy dl dt {
-		font-size: 16px;
-	}
-	#privacy dl dd {
-		line-height: 1.6;
-	}
-/*--------------------------------------------
+  #news .news_wrap {
+    margin-bottom: 30px;
+  }
+  #news .news_wrap li {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #news .news_wrap li:first-child {
+    margin-top: 0;
+  }
+  #news .news_wrap li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+  /*新着詳細*/
+  #news .single_wrap {
+    padding: 40px 10px 10px;
+  }
+  #news .single_wrap .ttl {
+    font-size: 20px;
+    width: inherit;
+    margin-right: -10px;
+    position: static;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  #news .single_wrap .date {
+    padding: 5px 10px;
+  }
+  #news .single_wrap .imgBox {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #news .single_wrap .txtBox {
+    margin-top: 20px;
+    padding: 0;
+  }
+  /*--------------------------------------------
 
-	サイトマップ				sitemap		 
-	
---------------------------------------------*/
-	#sitemap .sitemap_list {
-		padding: 0;
-	}
-	#sitemap .sitemap_list > li:nth-child(odd),
-	#sitemap .sitemap_list > li:nth-child(even){
-		padding-left: 0;
-	}
-	#sitemap .sitemap_list ul {
-		padding-left: 5px;
-	}
-/*--------------------------------------------
+	無料見積もり相談・お問い合わせ		inquiry/form/preparation
 
-	標準工事費				price		 
-	
 --------------------------------------------*/
-	#price .table-primary th {
-		text-align: center;
-		padding-left: 10px;
-	}
+  #inquiry #sec_02 .lead {
+    margin: 20px 0;
+  }
+  #inquiry #sec_02 .lead p {
+    font-size: 16px;
+  }
+  #inquiry .box_inquiry ul {
+    display: block;
+  }
+  #inquiry .box_inquiry ul li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #inquiry .box_inquiry ul li:last-child {
+    margin-bottom: 0;
+  }
+  #inquiry .box_inquiry ul li a {
+    padding: 15px 0;
+  }
+
+  #inquiry .box_inquiry ul li img {
+    max-width: 70px;
+  }
+  #inquiry #sec_03 .box_tel h4 {
+    font-size: 18px;
+  }
+  #inquiry .freedial {
+    font-size: 20px;
+  }
+  #inquiry .type .wrap {
+    width: 100%;
+  }
+  #form #sec_01 .lead p {
+    font-size: 16px;
+  }
+  #inquiry #sec_03 .box_tel {
+    padding: 15px;
+  }
+  .box_inquiry .ttl {
+    font-size: 16px;
+  }
+  .box_inquiry .rBox {
+    width: 100%;
+  }
+  .box_inquiry .lBox {
+    width: 100%;
+    display: none;
+  }
+  .form_inquiry {
+    padding: 0;
+  }
+  section.preparation .lead {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  section.preparation .ttl {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  section.preparation .prep_list > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  section.preparation .number_list ul {
+    margin-top: 0;
+  }
+  section.preparation .number_list ul:first-child {
+    border-bottom: none;
+  }
+  section.preparation .number_list li {
+    width: 100%;
+    border-bottom: solid 1px #fe7b07;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.preparation .number_list li:first-child {
+    border-right: none;
+    margin-top: 0;
+  }
+  section.preparation .number_list li span {
+    font-size: 15px;
+  }
+  section.preparation .number_list .other span {
+    margin-bottom: 10px;
+  }
+  section.preparation .number_list .other p {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /*お問い合わせの前に*/
+  #preparation .btn_01 {
+    margin-top: 30px;
+  }
+
+  /*--------------------------------------------
+
+	プライバシーポリシー				privacy
+
+--------------------------------------------*/
+  #privacy .privacy_wrap {
+    padding: 0;
+  }
+  #privacy .privacy_wrap p {
+    line-height: 1.6;
+  }
+  #privacy dl dt {
+    font-size: 16px;
+  }
+  #privacy dl dd {
+    line-height: 1.6;
+  }
+  /*--------------------------------------------
+
+	サイトマップ				sitemap
+
+--------------------------------------------*/
+  #sitemap .sitemap_list {
+    padding: 0;
+  }
+  #sitemap .sitemap_list > li:nth-child(odd),
+  #sitemap .sitemap_list > li:nth-child(even) {
+    padding-left: 0;
+  }
+  #sitemap .sitemap_list ul {
+    padding-left: 5px;
+  }
+  /*--------------------------------------------
+
+	標準工事費				price
+
+--------------------------------------------*/
+  #price .table-primary th {
+    text-align: center;
+    padding-left: 10px;
+  }
 }

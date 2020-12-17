@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="315" height="89" viewBox="0 0 315 89">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="315" height="89" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_3" data-name="Repeat Grid 3" clip-path="url(#clip-path)">
+    <g transform="translate(-22 -1750)">
+      <g id="Component_5_1" data-name="Component 5 – 1" transform="translate(22 1750)">
+        <text id="WHAT_WE_DO" data-name="WHAT WE DO" transform="translate(33 24)" fill="#0e376f" font-size="13" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.048em"><tspan x="0" y="0">WHAT WE DO</tspan></text>
+        <rect id="Rectangle_38" data-name="Rectangle 38" width="20" height="20" transform="translate(0 7)" fill="#0e376f"/>
+        <path id="Path_9" data-name="Path 9" d="M0,0V46.808" transform="translate(9.309 34.37)" fill="#0e376f" stroke="#0e376f" stroke-width="2"/>
+        <text id="私たちはガス機器から水回り_まで幅広く手掛けています" data-name="私たちはガス機器から水回り
+まで幅広く手掛けています" transform="translate(33 61)" fill="#0e376f" font-size="18" font-family="HiraginoSans-W3, Hiragino Sans" letter-spacing="0.032em"><tspan x="0" y="0">私たちは</tspan><tspan y="0" fill="#d97520" font-size="20" letter-spacing="0.048em">ガス機器</tspan><tspan y="0" font-size="20" letter-spacing="0.048em">から</tspan><tspan y="0" fill="#d97520" font-size="20" letter-spacing="0.048em">水回り</tspan><tspan y="0" fill="#d97520" font-size="20" font-family="Helvetica" letter-spacing="0.048em"></tspan><tspan font-size="20" letter-spacing="0.048em"><tspan x="0" y="26">まで幅広く手掛けています</tspan></tspan></text>
+        <rect id="Rectangle_40" data-name="Rectangle 40" width="27" height="27" transform="translate(288)" fill="#0e376f"/>
+      </g>
+    </g>
+  </g>
+</svg>

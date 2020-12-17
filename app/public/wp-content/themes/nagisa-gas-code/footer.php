@@ -1,15 +1,18 @@
 <?php wp_reset_query(); ?>
+<?php $upload_dir = wp_upload_dir(); ?>
 <footer id="footer">
     <div id="ftrInner">
-        <div class="logoBox"> <a href="<?php echo home_url(); ?>/"><img src="./wp-content/themes/nagisa-gas-code/assets/image/logo_01.png" alt="ナギサガスフィッティングス"></a> </div>
+        <div class="logoBox"> <a href="<?php echo home_url(); ?>/"><img src="<?php echo $upload_dir[
+    'baseurl'
+]; ?>/2020/12/Nagisagas_logo_white.svg" alt="ナギサガスフィッティングス"></a> </div>
         <nav id="ftrNav" class="for_pc">
             <ul class="cf ul_1">
-                <li class="home"><a href="<?php echo home_url(); ?>/">ホーム</a></li>
-                <li class="mgt20">私たちについて</li>
+                <!-- <li class="home"><a href="<?php echo home_url(); ?>/">ホーム</a></li> -->
+                <li>私たちについて</li>
                 <li class="subs"><a href="<?php echo home_url(); ?>/company/">会社案内</a></li>
                 <li class="subs"><a href="<?php echo home_url(); ?>/about/">安心施工</a></li>
+                <li class="subs"><a href="<?php echo home_url(); ?>/works/">施工実績</a></li>
                 <!--<li class="subs"><a href="<?php echo home_url(); ?>/staff/">スタッフ紹介</a></li>-->
-                <li class="main"><a href="<?php echo home_url(); ?>/works/">施工実績</a></li>
             </ul>
             <ul class="cf ul_2">
                 <li>取扱い製品</li>
@@ -31,12 +34,19 @@
                 <!--<li class="subs"><a href="<?php echo home_url(); ?>/ecowill/">エコウィルからの乗り換え</a></li>-->
             </ul>
             <ul class="cf ul_4">
-                <li><a href="<?php echo home_url(); ?>/inquiry/">無料お見積り・お問い合わせ</a></li>
+                <li>お問い合わせ</li>
+                <li class="subs"><a href="<?php echo home_url(); ?>/inquiry/">無料お見積り・お問い合わせ</a></li>
                 <li class="subs"><a href="<?php echo home_url(); ?>/form/">急なご相談はこちら</a></li>
                 <li class="subs"><a href="<?php echo home_url(); ?>/preparation/">お問い合わせの前に</a></li>
-                <li class="main"><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>
-                <li class="main"><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
+                <li class="subs"><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>
+                <li class="subs"><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
             </ul>
+            <div class="telBox">
+                <div class="head">お電話でのお問い合わせ</div>
+                <div class="number"><span class="day">【平日】</span><span class="tel">0120-006-152</span></div>
+                <div class="number"><span class="day">【土】</span><span class="tel">0120-637-879</span></div>
+                <div class="foot">(定休日：日・祝)</div>
+            </div>
         </nav>
         <!--sp-footer-nav-->
         <div class="for_sp">
@@ -48,7 +58,6 @@
                     <li class="main"><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
                 </ul>
             </nav>
-
         </div>
 
         <div class="bottom">
@@ -60,15 +69,13 @@
             <small id="copy">Copyright（C）2018 NAGISA GAS FITTINGS.All Rights Reserved.</small> </div>
     </div>
 </footer>
-<div class="totop"><a href="<?php echo home_url(); ?>/"></a></div>
+<div class="totop"><a href="<?php echo home_url(); ?>/" aria-label="ホーム"></a></div>
 </div>
-<!--　=============================== wrapper end ===============================　-->
+<!--=============================== wrapper end ===============================-->
 </div>
-<!--　=============================== drawer end ===============================　-->
+<!--=============================== drawer end ===============================-->
 <!-- JavaScript -->
-<?php if(is_home()):?>
-<!-- <script src="./wp-content/themes/nagisa-gas-code/asset/js/slick.min.js"></script> -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<?php if (is_home()): ?>
 <script type="text/javascript">
 $(function(){
 	$('.slick-box').slick({
@@ -86,7 +93,7 @@ $(function(){
 
 </script>
 
-<?php elseif(is_tax('product_cat')):?>
+<?php elseif (is_tax('product_cat')): ?>
 <script src="<?php echo home_url(); ?>/JS/jquery.colorbox-min.js"></script>
 <script>
 $(function() {
@@ -97,7 +104,7 @@ $(function() {
   });
 });
 </script>
-<?php elseif( is_page( array('test', 'inquiry') ) ):?>
+<?php elseif (is_page(['test', 'inquiry'])): ?>
 <script>
   var parameter = location.search;
   var parameter = parameter.substr(1);
@@ -115,14 +122,10 @@ $(function(){
 });
 </script>
 
-<?php endif;?>
-<!-- <script src="./wp-content/themes/nagisa-gas-code/assets/js/common.js"></script> -->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script> -->
-<!-- <script type="text/javascript" src="./wp-content/themes/nagisa-gas-code/assets/js/ofi.js"></script> -->
+<?php endif; ?>
 
 <script>
     AOS.init();
-    objectFitImages('.ofi');
 </script>
 
 <?php wp_footer(); ?>

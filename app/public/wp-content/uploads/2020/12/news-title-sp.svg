@@ -1,0 +1,9 @@
+<svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="315" height="89" viewBox="0 0 315 89">
+  <text id="WHAT_IS_NEW" data-name="WHAT IS NEW" transform="translate(33 24)" fill="#0e376f" font-size="13" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.048em"><tspan x="0" y="0">WHAT IS NEW</tspan></text>
+  <rect id="Rectangle_41" data-name="Rectangle 41" width="20" height="20" transform="translate(0 7)" fill="#0e376f"/>
+  <path id="Path_10" data-name="Path 10" d="M0,0V46.808" transform="translate(9.309 34.37)" fill="#0e376f" stroke="#0e376f" stroke-width="2"/>
+  <text id="私たちの最近の歩みを_ご紹介します" data-name="私たちの最近の歩みを
+ご紹介します" transform="translate(33 61)" fill="#0e376f" font-size="18" font-family="HiraginoSans-W3, Hiragino Sans" letter-spacing="0.032em"><tspan x="0" y="0">私たちの</tspan><tspan y="0" fill="#d97520">最近の歩み</tspan><tspan y="0">を</tspan><tspan y="0" font-family="Helvetica"></tspan><tspan x="0" y="26">ご紹介します</tspan></text>
+  <rect id="Rectangle_43" data-name="Rectangle 43" width="27" height="27" transform="translate(288)" fill="#0e376f"/>
+  <rect id="Rectangle_44" data-name="Rectangle 44" width="27" height="27" transform="translate(288 27) rotate(90)" fill="#d97520"/>
+</svg>

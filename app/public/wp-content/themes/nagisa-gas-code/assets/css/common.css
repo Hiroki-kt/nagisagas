@@ -19,6 +19,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /*--------------------------------------------
 	 DEFAULT SELECTER
@@ -39,6 +41,18 @@ img {
 @font-face {
   font-family: 'helvetica'; /* 任意につけれる */
   src: url(../font/HelveticaNeue.ttf); /* パスを指定 */
+}
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('../font/Montserrat-Bold.woff');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+@font-face {
+  font-family: 'montserrat-semibold';
+  src: url('../font/Montserrat-SemiBold.woff');
+  /* font-weight: normal;
+  font-style: normal; */
 }
 .futura {
   font-family: 'futura';
@@ -127,28 +141,81 @@ a {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 768px) {
+
+/* Todo "display: none" is worse */
+@media screen and (min-width: 1200px) {
   .for_sp {
+    display: none !important;
+  }
+  .for_tablet {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) and (min-width: 750px) {
+  /* .for_pc { */
+  /* display: none; */
+  /* } */
   .for_pc {
+    display: none !important;
+  }
+  .for_tablet {
     display: none;
   }
+}
+@media screen and (max-width: 749px) {
+  .for_pc {
+    display: none !important;
+  }
+  .for_tablet {
+    display: none;
+  }
+}
+
+.contact-button {
+  background-color: #000000;
+  height: 69px;
+  width: 350px;
+  border-radius: 10px;
+  display: table;
+}
+
+.contact-button p {
+  display: table-cell;
+  color: #ffffff;
+  font-size: 21px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+}
+
+.contact-button p i {
+  padding-left: 50px;
 }
 
 .btn_01 {
   text-align: center;
 }
 .btn_01 a {
+  display: flex;
+  display: -webkit-flex;
   background: #39302c;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
   color: #fff;
   border: 1px solid #39302c;
   padding: 12px 80px;
   text-align: center;
   font-weight: bold;
+  font-size: 22px;
+  width: 70%;
+  margin: 0 auto;
 }
+.btn_01 a i {
+  font-size: 50px;
+}
+
 @media screen and (min-width: 768px) {
   .btn_01 a:hover {
     background: #fff;
@@ -167,7 +234,7 @@ a {
 }
 
 .btn_01 i {
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
 .ttl_01 {
   text-align: center;
@@ -214,6 +281,9 @@ a {
   object-fit: cover;
   font-family: 'object-fit: cover;';
 }
+.swiper-wrapper {
+  height: fit-content;
+}
 /*--------------------------------------------
 	HEADER
 --------------------------------------------*/
@@ -242,7 +312,8 @@ a {
   right: 0;
   padding: 8px 10px 8px 55px;
   border: 1px solid #dbdbdb;
-  background: url(../image/icon_tel.png) 12px center no-repeat #fff;
+  background: url(../../../../uploads/icon_tel.png.webp) 12px center no-repeat
+    #fff;
   line-height: 1;
   font-weight: bold;
 }
@@ -274,10 +345,14 @@ a {
 #gNavi ul .gNavi_list {
   padding-top: 62px;
 }
-#header .bottom {
-  padding-top: 36px;
+.header-pc {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
 }
-#header .bottom .hdrInner {
+#header .header-pc .hdrInner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -286,6 +361,7 @@ a {
   margin-left: 20px;
 }
 #header .logoBox img {
+  height: 100px;
 }
 #gNavi {
 }
@@ -295,14 +371,16 @@ a {
 #gNavi ul .gNavi_list {
   font-size: 14px;
   font-weight: bold;
-  padding: 28px 0 0;
+  padding: 0 0 0;
   border-bottom: 0 solid #f96100;
-  margin: 0 20px;
+  margin-left: 20px;
   box-sizing: border-box;
+  width: 110px;
+  height: 110px;
 }
 #gNavi ul .gNavi_list > a {
-  padding: 38px 5px 22px;
-  background: url(../image/gnavi_home.png) center top no-repeat;
+  padding: 30px 5px 28px;
+  /* background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat; */
   box-sizing: border-box;
   display: block;
   border-bottom: 5px solid transparent;
@@ -310,23 +388,46 @@ a {
 #gNavi ul .gNavi_list:hover > a {
   border-color: #f96100;
 }
-#gNavi ul li a#gnavi_about {
-  background: url(../image/gnavi_about.png) center top no-repeat;
+.gnavi-icon {
+  padding: 30px 5px 28px;
+  /* background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat; */
+  box-sizing: border-box;
+  display: block;
+  border-bottom: 5px solid transparent;
 }
-#gNavi ul li a#gnavi_product {
-  background: url(../image/gnavi_product.png) center top no-repeat;
+.gnavi-tel {
+  padding: 15px 5px 15px;
+  /* background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat; */
+  box-sizing: border-box;
+  display: block;
+  border-bottom: 5px solid transparent;
+  background-color: #39302c;
+  color: #dbdbdb;
 }
-#gNavi ul li a#gnavi_costomer {
-  background: url(../image/gnavi_customer.png) center top no-repeat;
+.gnavi-icon:hover {
+  border-color: #f96100;
 }
-#gNavi ul li a#gnavi_works {
-  background: url(../image/gnavi_works.png) center top no-repeat;
-}
-#gNavi ul li a#gnavi_contact {
-  background: url(../image/gnavi_contact.png) center top no-repeat;
-}
+/* #gNavi ul li div#gnavi_about { */
+/* background: url(../../../../uploads/gnavi_about.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li div#gnavi_product { */
+/* background: url(../../../../uploads//gnavi_product.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li div#gnavi_costomer { */
+/* background: url(../../../../uploads//gnavi_customer.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li a#gnavi_works { */
+/* background: url(../../../../uploads//gnavi_works.png.webp) center top no-repeat; */
+/* } */
+/* #gNavi ul li div#gnavi_contact { */
+/* background: url(../../../../uploads//gnavi_contact.png.webp) center top no-repeat; */
+/* } */
 
 #gNavi ul .gNavi_list > a span {
+  display: block;
+  text-align: center;
+}
+#gNavi ul .gNavi_list > div span {
   display: block;
   text-align: center;
 }
@@ -338,10 +439,14 @@ a {
   font-size: 12px;
   line-height: 1.2;
 }
+#gNavi ul li a#gnavi_contact:hover {
+  text-decoration: none;
+}
 #gNavi ul li .eng {
   color: #fe7b07;
   font-family: 'Sorts Mill Goudy';
   line-height: 1;
+  white-space: nowrap;
 }
 #gNavi .gNavi_sub {
   opacity: 0;
@@ -461,6 +566,10 @@ a {
 }
 #footer .logoBox {
   margin: 0 0 40px;
+  height: 150px;
+}
+#footer .logoBox img {
+  height: 150px;
 }
 #ftrNav {
   display: flex;
@@ -469,8 +578,9 @@ a {
 #ftrNav ul {
   margin: 0 40px 0 0;
   padding: 0 40px 0 0;
-  font-size: 14px;
+  font-size: 15px;
   border-right: 1px solid #fff;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
 }
 #ftrNav ul:last-child {
   border: none;
@@ -490,8 +600,9 @@ a {
   font-weight: bold;
 }
 #ftrNav li.subs a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
 }
 #footer .bottom {
 }
@@ -543,13 +654,51 @@ a {
 .totop.visible {
   transform: scale(1);
 }
+#footer .telBox {
+  bottom: 120px;
+  right: 0;
+  padding: 30px 10px 15px 55px;
+  border: 1px solid #dbdbdb;
+  background: url(../../../../uploads/icon_tel.png.webp) 12px center no-repeat
+    #fff;
+  line-height: 1;
+  font-weight: bold;
+}
+#footer .telBox .head {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+#footer .telBox .number {
+  font-size: 20px;
+  color: #fe7b07;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#footer .telBox .number span {
+  font-size: 14px;
+  margin-right: 3px;
+}
+#footer .telBox .foot {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+#footer .telBox .number .tel {
+  font-size: 1em;
+}
 @media screen and (min-width: 768px) {
+}
+.hero-image {
+  padding-top: 110px;
 }
 
 /*--------------------------------------------
 	sp
 --------------------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   /*base*/
   body {
     min-width: 100% !important;
@@ -566,19 +715,34 @@ a {
     font-size: 15px;
   }
   .btn_01 a {
-    max-width: 235px;
+    /* max-width: 235px; */
     padding: 10px 10px;
   }
   .solidBox {
     padding: 20px;
   }
-
-  /*header*/
-  #header {
-    padding: 10px;
+  .contact-button {
+    background-color: #000000;
+    height: 55px;
+    width: 285px;
+    border-radius: 8px;
+    display: table;
   }
+  .contact-button p {
+    display: table-cell;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
+  /*header*/
   #header .logoBox {
-    margin-left: 0;
+    padding-left: 10px;
+    /* padding-top: 10px; */
+  }
+  #header .logoBox img {
+    height: 60px;
   }
   #header .telBox {
     position: static;
@@ -598,13 +762,17 @@ a {
     text-align: left;
     padding-left: 1em;
   }
+  .hdrInner {
+    height: 57px;
+  }
   .drawer--top .drawer-nav {
     height: 100%;
   }
   .drawer-hamburger {
-    background: #39302c;
-    padding: 16px 15px 30px 15px;
-    top: -2px;
+    background-color: #39302c;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: 0px;
   }
   .drawer-open .drawer-hamburger-icon {
     background: transparent;
@@ -719,6 +887,9 @@ a {
   .drawer-menu-item {
     padding: 12px 0;
   }
+  .hero-image {
+    padding-top: 60px;
+  }
 
   /*footer*/
   #footer {
@@ -760,5 +931,12 @@ a {
   /*.totop {
 		width: 30px;
 		height: 30px;
-	}*/
+  }*/
+  .header-sp {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
 }

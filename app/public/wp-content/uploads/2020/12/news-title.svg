@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="438" height="152" viewBox="0 0 438 152">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="438" height="152" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+    <g transform="translate(-117 -2514)">
+      <g id="Component_10_1" data-name="Component 10 – 1" transform="translate(117 2514)">
+        <text id="WHAT_IS_NEW" data-name="WHAT IS NEW" transform="translate(60 30)" fill="#0e376f" font-size="24" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.048em"><tspan x="0" y="0">WHAT IS NEW</tspan></text>
+        <rect id="Rectangle_20" data-name="Rectangle 20" width="36" height="36" fill="#d97520"/>
+        <text id="私たちの最近の歩みを_ご紹介します" data-name="私たちの最近の歩みを
+ご紹介します" transform="translate(60 96)" fill="#d97520" font-size="36" font-family="HiraginoSans-W3, Hiragino Sans" letter-spacing="0.048em"><tspan x="0" y="0">私たち</tspan><tspan y="0" fill="#0e376f">の最近の歩みを</tspan><tspan y="0" fill="#0e376f" font-family="Helvetica"></tspan><tspan fill="#0e376f"><tspan x="0" y="52">ご紹介します</tspan></tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

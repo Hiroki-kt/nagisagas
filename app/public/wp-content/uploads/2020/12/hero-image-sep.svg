@@ -1,0 +1,7 @@
+<svg id="Component_8_1" data-name="Component 8 – 1" xmlns="http://www.w3.org/2000/svg" width="132" height="568.5" viewBox="0 0 132 568.5">
+  <rect id="Rectangle_3" data-name="Rectangle 3" width="59" height="59" fill="#d97520"/>
+  <text id="NAGISA_GAS" data-name="NAGISA GAS" transform="translate(58 131) rotate(90)" fill="#0e376f" font-size="30" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.048em" opacity="0.399"><tspan x="0" y="0">NAGISA GAS</tspan></text>
+  <text id="WE_ARE" data-name="WE ARE" transform="translate(103 131) rotate(90)" fill="#d97520" font-size="30" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.048em" opacity="0.399"><tspan x="0" y="0">WE</tspan><tspan y="0" xml:space="preserve" fill="#0e376f"> ARE</tspan></text>
+  <rect id="Rectangle_10" data-name="Rectangle 10" width="36" height="36" transform="translate(8 430)" fill="#d97520"/>
+  <line id="Line_1" data-name="Line 1" y2="84" transform="translate(26.5 484.5)" fill="none" stroke="#d97520" stroke-width="2"/>
+</svg>
