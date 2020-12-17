@@ -4,7 +4,7 @@
     <div id="ftrInner">
         <div class="logoBox"> <a href="<?php echo home_url(); ?>/"><img src="<?php echo $upload_dir[
     'baseurl'
-]; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス"></a> </div>
+]; ?>/2020/12/Nagisagas_logo_white.svg" alt="ナギサガスフィッティングス"></a> </div>
         <nav id="ftrNav" class="for_pc">
             <ul class="cf ul_1">
                 <!-- <li class="home"><a href="<?php echo home_url(); ?>/">ホーム</a></li> -->

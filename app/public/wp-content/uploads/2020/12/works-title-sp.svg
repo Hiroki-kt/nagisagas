@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="315" height="89" viewBox="0 0 315 89">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="315" height="89" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_5" data-name="Repeat Grid 5" clip-path="url(#clip-path)">
+    <g transform="translate(-22 -4066)">
+      <g id="Component_16_1" data-name="Component 16 – 1" transform="translate(22 4066)">
+        <text id="OUR_WORKS" data-name="OUR WORKS" transform="translate(33 24)" fill="#0e376f" font-size="13" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.048em"><tspan x="0" y="0">OUR WORKS</tspan></text>
+        <rect id="Rectangle_57" data-name="Rectangle 57" width="20" height="20" transform="translate(0 7)" fill="#0e376f"/>
+        <text id="私たちの施工実績の一部を_ご紹介します" data-name="私たちの施工実績の一部を
+ご紹介します" transform="translate(33 61)" fill="#0e376f" font-size="18" font-family="HiraginoSans-W3, Hiragino Sans" letter-spacing="0.032em"><tspan x="0" y="0">私たちの</tspan><tspan y="0" fill="#d97520">施工実績</tspan><tspan y="0">の一部を</tspan><tspan y="0" font-family="Helvetica"></tspan><tspan x="0" y="26">ご紹介します</tspan></text>
+        <rect id="Rectangle_59" data-name="Rectangle 59" width="27" height="27" transform="translate(288)" fill="#0e376f"/>
+      </g>
+    </g>
+  </g>
+</svg>

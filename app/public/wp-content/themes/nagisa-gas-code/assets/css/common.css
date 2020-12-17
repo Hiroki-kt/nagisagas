@@ -19,6 +19,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /*--------------------------------------------
 	 DEFAULT SELECTER
@@ -39,6 +41,18 @@ img {
 @font-face {
   font-family: 'helvetica'; /* 任意につけれる */
   src: url(../font/HelveticaNeue.ttf); /* パスを指定 */
+}
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('../font/Montserrat-Bold.woff');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+@font-face {
+  font-family: 'montserrat-semibold';
+  src: url('../font/Montserrat-SemiBold.woff');
+  /* font-weight: normal;
+  font-style: normal; */
 }
 .futura {
   font-family: 'futura';
@@ -171,6 +185,7 @@ a {
   font-size: 21px;
   text-align: center;
   vertical-align: middle;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
 }
 
 .contact-button p i {
@@ -346,6 +361,7 @@ a {
   margin-left: 20px;
 }
 #header .logoBox img {
+  height: 100px;
 }
 #gNavi {
 }
@@ -550,6 +566,10 @@ a {
 }
 #footer .logoBox {
   margin: 0 0 40px;
+  height: 150px;
+}
+#footer .logoBox img {
+  height: 150px;
 }
 #ftrNav {
   display: flex;
@@ -558,8 +578,9 @@ a {
 #ftrNav ul {
   margin: 0 40px 0 0;
   padding: 0 40px 0 0;
-  font-size: 14px;
+  font-size: 15px;
   border-right: 1px solid #fff;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
 }
 #ftrNav ul:last-child {
   border: none;
@@ -579,8 +600,9 @@ a {
   font-weight: bold;
 }
 #ftrNav li.subs a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
 }
 #footer .bottom {
 }
@@ -699,11 +721,28 @@ a {
   .solidBox {
     padding: 20px;
   }
-
+  .contact-button {
+    background-color: #000000;
+    height: 55px;
+    width: 285px;
+    border-radius: 8px;
+    display: table;
+  }
+  .contact-button p {
+    display: table-cell;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
   /*header*/
   #header .logoBox {
     padding-left: 10px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+  }
+  #header .logoBox img {
+    height: 60px;
   }
   #header .telBox {
     position: static;

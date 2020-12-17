@@ -147,6 +147,12 @@
   })(document);
 </script>
 
+<svg width="0" height="0" style="position: absolute; top: 0; left: 0;">
+  <clipPath id="heart-clip">
+    <path id="mbri-hearth" d="M56.355,1C23.8,1,0,29.133,0,65.406c0,37.227,25.827,65.952,50.726,85.338a242.682,242.682,0,0,0,49.9,29.794,6.651,6.651,0,0,0,4.83,0,242.841,242.841,0,0,0,49.928-29.794c24.887-19.386,50.713-48.111,50.713-85.338C206.1,29.133,182.3,1,149.745,1c-26.561,0-41,15.9-46.695,22.929C97.356,16.921,82.917,1,56.355,1Z" transform="translate(0 -1)" fill="rgba(217,167,32,0.77)"/>
+  </clipPath>
+</svg>
+
 </head>
 
 <?php if (is_home()): ?>
@@ -189,9 +195,7 @@
 				<div class="hdrInner">
 					<div class="logoBox">
 						<a href="<?php echo home_url(); ?>/">
-							<img src="<?php echo $upload_dir[
-           'baseurl'
-       ]; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス" >
+							<img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/Nagisagas_logo.svg" alt="ナギサガスフィッティングス" >
 						</a>
 					</div>
 					<div id="gNavi">
@@ -393,9 +397,7 @@
 			<div class="hdrInner">
 				<div class="logoBox">
 					<a href="<?php echo home_url(); ?>/">
-						<img src="<?php echo $upload_dir[
-          'baseurl'
-      ]; ?>/logo_01.png.webp" alt="ナギサガスフィッティングス">
+						<img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/Nagisagas_logo.svg" alt="ナギサガスフィッティングス">
 					</a>
 				</div>
 				<button type="button" class="drawer-toggle drawer-hamburger">

@@ -4,6 +4,303 @@
   /*--------------------------------------------
 	 TOP
 --------------------------------------------*/
+  .hero-image {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .hero-image-title img {
+    width: 100%;
+  }
+  .hero-image-photo {
+    height: auto;
+  }
+  .hero-image-photo-box {
+    margin-top: 30px;
+  }
+  .top-news {
+    position: static;
+    background-color: #0e376f;
+    margin-top: 30px;
+    width: 90%;
+    height: 280px;
+  }
+  .top-news-box {
+    width: 100%;
+    padding: 10px 20px 40px 0;
+    display: block;
+    color: #ffffff;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
+  .top-news-box a {
+    color: #ffffff;
+    position: relative;
+    right: -200px;
+    bottom: -20px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-size: 13px;
+  }
+  .top-news img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    clip-path: none;
+  }
+  .top-photo-area {
+    display: flex;
+  }
+  .top-date-box {
+    padding: 0px 20px 0 30px;
+  }
+  .top-date-box p {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
+  .top-title {
+    padding: 0;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ffffff;
+  }
+  .top-news-year {
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: 'montserrat-bold';
+    padding: 0;
+    margin: 0;
+  }
+  .top-news-date {
+    font-size: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: 'montserrat-bold';
+    padding: 0;
+    margin: 0;
+  }
+  .top-news-week {
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: 'montserrat-bold';
+    padding: 0;
+    margin: 0;
+  }
+  .top-title {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .advantage {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .advantage-title {
+    width: 100%;
+  }
+  .advantage-title img {
+    width: 90%;
+  }
+  .advantage-caption {
+    margin: 0 20px;
+    max-width: 375px;
+    margin-top: 30px;
+  }
+  .advantage-caption-abst {
+    font-size: 18px;
+    max-width: 350px;
+  }
+  .advantage-caption-detail {
+    font-size: 15px;
+    max-width: 270px;
+    margin-top: 20px;
+  }
+  .advantage-contact-button {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .product {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 80px;
+  }
+  .product-header {
+    display: block;
+    width: 100%;
+  }
+  .product-header img {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .product-header-image {
+    display: flex;
+    position: static;
+    width: 90%;
+    margin: 0;
+  }
+  .product-header-image img {
+    width: fit-content;
+    margin: 0;
+  }
+  .product::before {
+    top: 2250px;
+    width: 100%;
+    z-index: -2;
+    height: 700px;
+  }
+  .product-content {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .product::after {
+    left: 0;
+    z-index: -3;
+    top: 2230px;
+  }
+  .product-content-header {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .product-content-body {
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: 30px;
+    display: table;
+    width: 100%;
+    list-style: none outside;
+  }
+  .product-content-box {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  .product-contact-button {
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+  .product-item-title {
+    font-size: 16px;
+  }
+  .product-item-detail li {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .news {
+    max-width: 400px;
+  }
+  .news-article-box img {
+    width: 240px;
+    height: 101px;
+    object-fit: cover;
+    clip-path: none;
+  }
+  .news-header {
+    display: block;
+    max-width: 100%;
+  }
+  .news-header-image {
+    position: static;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .news-header-title {
+    width: 95%;
+  }
+  .news-list {
+    display: block;
+  }
+  .news-list li {
+    display: block;
+    width: 100%;
+  }
+  .news-check-button {
+    margin: 0 auto;
+  }
+  .works {
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 150px;
+    display: block;
+    max-width: 400px;
+  }
+  .works-header {
+    margin-bottom: 50px;
+  }
+  .works-title {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .works-title-photo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .works-caption {
+    max-width: 380px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  .works-caption-abst {
+    font-size: 18px;
+    padding-bottom: 30px;
+    border-bottom: solid #000000;
+    max-width: 330px;
+  }
+  .works-caption-detail {
+    font-size: 15px;
+    max-width: 280px;
+    margin-top: 30px;
+  }
+  .works-content {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .news-article-box {
+    display: block;
+  }
+  .news-photo-area {
+    display: flex;
+  }
+  .news-manth {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'montserrat-bold';
+  }
+  .news-date {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 'montserrat-semibold';
+  }
+  .news-week {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'montserrat-bold';
+  }
+  .news-article-title {
+    color: #000000;
+    font-size: 18px;
+    padding-top: 30px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  }
+  .works-check-button {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
   #top .secInner {
     padding: 0 20px;
   }
@@ -49,6 +346,7 @@
   #top #sec_03 .list_01 li .title {
     width: 100%;
   }
+
   /*--------------------------------------------
 	 下層共通
 --------------------------------------------*/

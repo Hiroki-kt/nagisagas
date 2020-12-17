@@ -529,7 +529,7 @@ function catch_first_image()
 
   if (empty($first_img)) {
     //Defines a default image
-    $first_img = '/images/default.jpg';
+    $first_img = get_template_directory_uri() . '/assets/image/Nagisa-sample.jpg';
   }
   return $first_img;
 }
